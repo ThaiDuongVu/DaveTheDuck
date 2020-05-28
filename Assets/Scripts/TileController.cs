@@ -36,7 +36,7 @@ public class TileController : MonoBehaviour
     private void SetMaterial()
     {
         meshRenderer.material = paintMaterial;
-        gameController.tileCount--;
+        gameController.DecreaseTile();
         painted = true;
     }
 }

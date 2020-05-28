@@ -18,7 +18,7 @@ public class TimerTextController : MonoBehaviour
 
     private void AnimationControl()
     {
-        if (gameController.GetTimer() > 0)
+        if (!gameController.GetGameOver())
         {
             gameObject.GetComponent<TextMeshProUGUI>().text = ((int) gameController.GetTimer()).ToString();
         }
