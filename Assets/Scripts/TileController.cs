@@ -4,7 +4,7 @@ public class TileController : MonoBehaviour
 {
     private MeshRenderer meshRenderer;
 
-    private Material startMaterial;
+    private Material defaultMaterial;
     public Material paintMaterial;
 
     private bool painted;
@@ -12,7 +12,7 @@ public class TileController : MonoBehaviour
     private void Awake()
     {
         meshRenderer = gameObject.transform.GetComponent<MeshRenderer>();
-        startMaterial = meshRenderer.material;
+        defaultMaterial = meshRenderer.material;
     }
 
     private void Start()

@@ -3,6 +3,14 @@
 public class PlayerController : MonoBehaviour
 {
     private const float speed = 15f;
+    private bool isRunning;
+
+    private Animator animator;
+
+    private void Awake()
+    {
+        animator = gameObject.GetComponent<Animator>();
+    }
 
     private void Start()
     {
@@ -26,5 +34,27 @@ public class PlayerController : MonoBehaviour
             gameObject.transform.rotation = Quaternion.LookRotation(movement);
         }
         gameObject.transform.Translate(movement * speed * Time.deltaTime, Space.World);
+
+        AnimationControl(movement);
+    }
+
+    private void AnimationControl(Vector3 movement)
+    {
+        if (movement == Vector3.zero)
+        {
+            if (isRunning)
+            {
+                animator.SetBool("run", false);
+                isRunning = false;
+            }
+        }
+        else
+        {
+            if (!isRunning)
+            {
+                animator.SetBool("run", true);
+                isRunning = true;
+            }
+        }
     }
 }
