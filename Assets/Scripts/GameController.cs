@@ -8,6 +8,8 @@ public class GameController : MonoBehaviour
 
     private int tileCount;
 
+    private bool gameStart;
+
     private bool gameOver;
 
     public float timer;
@@ -24,9 +26,10 @@ public class GameController : MonoBehaviour
     private void Start()
     {
         Cursor.visible = false;
+
+        gameStart = false;
         gameOver = false;
     }
-
     
     private void Update()
     {
@@ -44,7 +47,7 @@ public class GameController : MonoBehaviour
         {
             if (!gameOver)
             {
-                gameOver = true;
+                SetGameOver();
                 starRating = 0;
             }
         }
@@ -53,6 +56,12 @@ public class GameController : MonoBehaviour
     public float GetTimer()
     {
         return timer;
+    }
+
+    private void SetGameOver()
+    {
+        Camera.main.GetComponent<Animator>().SetTrigger("gameOver");
+        gameOver = true;
     }
 
     public bool GetGameOver()
@@ -78,7 +87,8 @@ public class GameController : MonoBehaviour
                 {
                     starRating = 1;
                 }
-                gameOver = true;
+
+                SetGameOver();
             }
         }
     }

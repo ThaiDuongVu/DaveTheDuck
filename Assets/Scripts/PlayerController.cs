@@ -13,11 +13,6 @@ public class PlayerController : MonoBehaviour
         animator = gameObject.GetComponent<Animator>();
     }
 
-    private void Start()
-    {
-
-    }
-
 
     private void Update()
     {
