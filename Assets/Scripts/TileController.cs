@@ -9,6 +9,8 @@ public class TileController : MonoBehaviour
 
     private bool painted;
 
+    public GameController gameController;
+
     private void Awake()
     {
         meshRenderer = gameObject.transform.GetComponent<MeshRenderer>();
@@ -26,14 +28,15 @@ public class TileController : MonoBehaviour
         {
             if (!painted)
             {
-                SetMaterial(paintMaterial);
+                SetMaterial();
             }
         }
     }
 
-    private void SetMaterial(Material material)
+    private void SetMaterial()
     {
-        meshRenderer.material = material;
+        meshRenderer.material = paintMaterial;
+        gameController.tileCount--;
         painted = true;
     }
 }

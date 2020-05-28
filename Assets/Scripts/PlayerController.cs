@@ -3,6 +3,7 @@
 public class PlayerController : MonoBehaviour
 {
     private const float speed = 15f;
+    private float mouseAccelerator = 3f;
     private bool isRunning;
 
     private Animator animator;
@@ -27,7 +28,11 @@ public class PlayerController : MonoBehaviour
     {
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
-        Vector3 movement = new Vector3(horizontal, 0f, vertical);
+
+        float mouseX = Input.GetAxis("Mouse X") * mouseAccelerator;
+        float mouseY = Input.GetAxis("Mouse Y") * mouseAccelerator;
+
+        Vector3 movement = new Vector3(horizontal + mouseX, 0f, vertical + mouseY);
 
         if (movement != Vector3.zero)
         {
