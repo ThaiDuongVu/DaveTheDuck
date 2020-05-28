@@ -9,8 +9,11 @@ public class GameController : MonoBehaviour
     private int tileCount;
 
     private bool gameStart;
+    private float countDown = 3f;
 
     private bool gameOver;
+    public GameObject gameOverMenu;
+    public GameObject stars;
 
     public float timer;
 
@@ -28,18 +31,30 @@ public class GameController : MonoBehaviour
         Cursor.visible = false;
 
         gameStart = false;
+
+        gameOverMenu.SetActive(false);
         gameOver = false;
+
+        timer += 1f;
+        countDown += 1f;
     }
     
     private void Update()
     {
-        TimerControl();
-        TileCountControl();
+        if (gameStart)
+        {
+            TimerControl();
+            TileCountControl();
+        }
+        else
+        {
+            StartGame();
+        }
     }
 
     private void TimerControl()
     {
-        if (timer > 0f)
+        if (timer > 1f)
         {
             timer -= Time.deltaTime;
         }
@@ -48,6 +63,8 @@ public class GameController : MonoBehaviour
             if (!gameOver)
             {
                 SetGameOver();
+                gameOverMenu.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = "Level Failed";
+
                 starRating = 0;
             }
         }
@@ -61,12 +78,44 @@ public class GameController : MonoBehaviour
     private void SetGameOver()
     {
         Camera.main.GetComponent<Animator>().SetTrigger("gameOver");
+        Cursor.visible = true;
+
+        gameOverMenu.SetActive(true);
+        stars.GetComponent<StarsController>().SetStars(starRating);
+        
         gameOver = true;
     }
 
     public bool GetGameOver()
     {
         return gameOver;
+    }
+
+    private void StartGame()
+    {
+        if (countDown > 1)
+        {
+            countDown -= Time.deltaTime;
+        }
+        else
+        {
+            gameStart = true;
+        }
+    }
+
+    public float GetCountDown()
+    {
+        return countDown;
+    }
+
+    public bool GetGameStart()
+    {
+        return gameStart;
+    }
+
+    public int GetRating()
+    {
+        return starRating;
     }
 
     private void TileCountControl()

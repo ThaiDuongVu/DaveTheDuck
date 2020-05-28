@@ -7,12 +7,12 @@ public class PlayerController : MonoBehaviour
     private bool isRunning;
 
     private Animator animator;
+    public GameController gameController;
 
     private void Awake()
     {
         animator = gameObject.GetComponent<Animator>();
     }
-
 
     private void Update()
     {
@@ -33,7 +33,10 @@ public class PlayerController : MonoBehaviour
         {
             gameObject.transform.rotation = Quaternion.LookRotation(movement);
         }
-        gameObject.transform.Translate(movement * speed * Time.deltaTime, Space.World);
+        if (!gameController.GetGameOver() && gameController.GetGameStart())
+        {
+            gameObject.transform.Translate(movement * speed * Time.deltaTime, Space.World);
+        }
 
         AnimationControl(movement);
     }
@@ -54,6 +57,15 @@ public class PlayerController : MonoBehaviour
             {
                 animator.SetBool("run", true);
                 isRunning = true;
+            }
+        }
+
+        if (gameController.GetGameOver())
+        {
+            if (isRunning)
+            {
+                animator.SetBool("run", false);
+                isRunning = false;
             }
         }
     }
