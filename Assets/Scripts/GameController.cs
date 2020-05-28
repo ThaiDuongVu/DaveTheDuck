@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using TMPro;
 
 public class GameController : MonoBehaviour
 {
@@ -7,7 +8,9 @@ public class GameController : MonoBehaviour
 
     public int tileCount;
 
-    private float timer;
+    private bool gameOver;
+
+    public float timer;
 
     private void Awake()
     {
@@ -17,12 +20,33 @@ public class GameController : MonoBehaviour
     
     private void Start()
     {
-        timer = 0f;
+        Cursor.visible = false;
+        gameOver = false;
     }
 
     
     private void Update()
     {
-        timer += Time.deltaTime;
+        TimerControl();
+    }
+
+    private void TimerControl()
+    {
+        if (timer > 0f)
+        {
+            timer -= Time.deltaTime;
+        }
+        else
+        {
+            if (!gameOver)
+            {
+                gameOver = true;
+            }
+        }
+    }
+
+    public float GetTimer()
+    {
+        return timer;
     }
 }

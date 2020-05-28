@@ -3,7 +3,7 @@
 public class PlayerController : MonoBehaviour
 {
     private const float speed = 15f;
-    private float mouseAccelerator = 3f;
+    private float mouseAccelerator = 2f;
     private bool isRunning;
 
     private Animator animator;
