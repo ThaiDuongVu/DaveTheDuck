@@ -1,8 +1,11 @@
 ﻿using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
 {
+    private Vector2 mousePos;
+
     public GameObject floor;
     private GameObject[] tiles;
 
@@ -29,6 +32,7 @@ public class GameController : MonoBehaviour
     private void Start()
     {
         Cursor.visible = false;
+        mousePos = Vector2.zero;
 
         gameStart = false;
 
@@ -82,7 +86,7 @@ public class GameController : MonoBehaviour
 
         gameOverMenu.SetActive(true);
         stars.GetComponent<StarsController>().SetStars(starRating);
-        
+
         gameOver = true;
     }
 
@@ -145,5 +149,20 @@ public class GameController : MonoBehaviour
     public void DecreaseTile()
     {
         tileCount--;
+    }
+
+    public void Home()
+    {
+
+    }
+
+    public void Restart()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name, LoadSceneMode.Single);
+    }
+
+    public void NextLevel()
+    {
+
     }
 }
