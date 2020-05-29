@@ -962,8 +962,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 32
-  m_fontSizeBase: 32
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -8998,6 +8998,7 @@ MonoBehaviour:
   floor: {fileID: 636496169}
   canvas: {fileID: 293646953}
   player: {fileID: 1989886946}
+  cursorController: {fileID: 293646955}
   gameOverMenu: {fileID: 650520066}
   stars: {fileID: 1176644895}
   timer: 15

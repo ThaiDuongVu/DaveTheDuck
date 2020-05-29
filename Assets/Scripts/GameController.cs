@@ -3,8 +3,6 @@ using TMPro;
 
 public class GameController : MonoBehaviour
 {
-    private Vector2 mousePos;
-
     public GameObject floor;
     private GameObject[] tiles;
 
@@ -17,6 +15,7 @@ public class GameController : MonoBehaviour
     private bool canvasVisible;
 
     public GameObject player;
+    public CursorController cursorController;
 
     private bool gameOver;
     public GameObject gameOverMenu;
@@ -36,7 +35,8 @@ public class GameController : MonoBehaviour
     private void Start()
     {
         Cursor.visible = false;
-        mousePos = Vector2.zero;
+        Cursor.lockState = CursorLockMode.Locked;
+        cursorController.HideCursor();
 
         gameStart = false;
 
@@ -93,6 +93,8 @@ public class GameController : MonoBehaviour
 
         gameOverMenu.SetActive(true);
         stars.GetComponent<StarsController>().SetStars(starRating);
+
+        cursorController.ShowCursor();
 
         gameOver = true;
     }

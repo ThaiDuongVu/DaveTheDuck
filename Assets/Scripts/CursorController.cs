@@ -11,7 +11,9 @@ public class CursorController : MonoBehaviour
 
     public Image cursor;
 
-    private float movementSpeedMultiplier = 10f;
+    private float joystickAcclerator = 10f;
+    private float mouseAccelerator = 15f;
+
     public GameController gameController;
 
     private void Awake()
@@ -55,8 +57,23 @@ public class CursorController : MonoBehaviour
     {
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
-        Vector2 movement = new Vector2(horizontal, vertical);
 
-        cursor.GetComponent<RectTransform>().Translate(movement * movementSpeedMultiplier);
+        float mouseX = Input.GetAxis("Mouse X");
+        float mouseY = Input.GetAxis("Mouse Y");
+
+        Vector2 joystickMovement = new Vector2(horizontal, vertical) * joystickAcclerator;
+        Vector2 mouseMovement = new Vector2(mouseX, mouseY) * mouseAccelerator;
+
+        cursor.GetComponent<RectTransform>().Translate(joystickMovement + mouseMovement);
+    }
+
+    public void HideCursor()
+    {
+        cursor.gameObject.SetActive(false);
+    }
+
+    public void ShowCursor()
+    {
+        cursor.gameObject.SetActive(true);
     }
 }
