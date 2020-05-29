@@ -12,32 +12,27 @@ public class SceneLoader : MonoBehaviour
         cameraAnimator = Camera.main.GetComponent<Animator>();
     }
     
-    private void Start()
+    private void PrepareLoadScene()
     {
-        
-    }
-
-    
-    private void Update()
-    {
-        
+        gameOverMenu.SetActive(false);
+        cameraAnimator.SetTrigger("zoomIn");
     }
 
     public void Home()
     {
-
+        PrepareLoadScene();
+        cameraController.SetSceneToLoad("Home");
     }
 
     public void Restart()
     {
-        gameOverMenu.SetActive(false);
-        cameraAnimator.SetTrigger("zoomIn");
-
+        PrepareLoadScene();
         cameraController.SetSceneToLoad(SceneManager.GetActiveScene().name);
     }
 
     public void NextLevel()
     {
-
+        PrepareLoadScene();
+        // cameraController.SetSceneToLoad("NextScene");
     }
 }

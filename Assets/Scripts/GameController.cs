@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
 using TMPro;
-using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
 {
@@ -13,6 +12,11 @@ public class GameController : MonoBehaviour
 
     private bool gameStart;
     private float countDown = 3f;
+
+    public Canvas canvas;
+    private bool canvasVisible;
+
+    public GameObject player;
 
     private bool gameOver;
     public GameObject gameOverMenu;
@@ -41,6 +45,8 @@ public class GameController : MonoBehaviour
 
         timer += 1f;
         countDown += 1f;
+
+        canvasVisible = true;
     }
     
     private void Update()
@@ -49,6 +55,8 @@ public class GameController : MonoBehaviour
         {
             TimerControl();
             TileCountControl();
+
+            HideCanvas();
         }
         else
         {
@@ -149,5 +157,32 @@ public class GameController : MonoBehaviour
     public void DecreaseTile()
     {
         tileCount--;
+    }
+
+    private void HideCanvas()
+    {
+        if (gameOver)
+        {
+            if (Input.GetButtonDown("Fire2"))
+            {
+                if (canvasVisible)
+                {
+                    canvas.enabled = false;
+                    canvasVisible = false;
+
+                    player.SetActive(false);
+                }
+            }
+            if (Input.GetButtonUp("Fire2"))
+            {
+                if (!canvasVisible)
+                {
+                    canvas.enabled = true;
+                    canvasVisible = true;
+
+                    player.SetActive(true);
+                }
+            }
+        }
     }
 }

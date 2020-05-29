@@ -30,7 +30,7 @@ public class PlayerController : MonoBehaviour
         float mouseY = Input.GetAxis("Mouse Y");
 
         Vector3 movement = new Vector3(horizontal + mouseX, 0f, vertical + mouseY);
-        
+
         if (!gameController.GetGameOver() && gameController.GetGameStart())
         {
             if (movement != Vector3.zero)
@@ -38,10 +38,9 @@ public class PlayerController : MonoBehaviour
                 gameObject.transform.rotation = Quaternion.LookRotation(movement);
             }
             gameObject.transform.Translate(movement * speed * Time.deltaTime, Space.World);
-            
+
             ClampMovement();
         }
-
         AnimationControl(movement);
     }
 
@@ -72,7 +71,7 @@ public class PlayerController : MonoBehaviour
 
     private void AnimationControl(Vector3 movement)
     {
-        if (movement == Vector3.zero)
+        if (gameController.GetGameOver())
         {
             if (isRunning)
             {
@@ -82,19 +81,24 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
-            if (!isRunning)
+            if (gameController.GetGameStart())
             {
-                animator.SetBool("run", true);
-                isRunning = true;
-            }
-        }
-
-        if (gameController.GetGameOver())
-        {
-            if (isRunning)
-            {
-                animator.SetBool("run", false);
-                isRunning = false;
+                if (movement == Vector3.zero)
+                {
+                    if (isRunning)
+                    {
+                        animator.SetBool("run", false);
+                        isRunning = false;
+                    }
+                }
+                else
+                {
+                    if (!isRunning)
+                    {
+                        animator.SetBool("run", true);
+                        isRunning = true;
+                    }
+                }
             }
         }
     }
