@@ -3,7 +3,6 @@
 public class PlayerController : MonoBehaviour
 {
     private const float speed = 15f;
-    private float mouseAccelerator = 1.5f;
     private bool isRunning;
 
     private Animator animator;
@@ -27,18 +26,19 @@ public class PlayerController : MonoBehaviour
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
 
-        float mouseX = Input.GetAxis("Mouse X") * mouseAccelerator;
-        float mouseY = Input.GetAxis("Mouse Y") * mouseAccelerator;
+        float mouseX = Input.GetAxis("Mouse X");
+        float mouseY = Input.GetAxis("Mouse Y");
 
         Vector3 movement = new Vector3(horizontal + mouseX, 0f, vertical + mouseY);
-
-        if (movement != Vector3.zero)
-        {
-            gameObject.transform.rotation = Quaternion.LookRotation(movement);
-        }
+        
         if (!gameController.GetGameOver() && gameController.GetGameStart())
         {
+            if (movement != Vector3.zero)
+            {
+                gameObject.transform.rotation = Quaternion.LookRotation(movement);
+            }
             gameObject.transform.Translate(movement * speed * Time.deltaTime, Space.World);
+            
             ClampMovement();
         }
 

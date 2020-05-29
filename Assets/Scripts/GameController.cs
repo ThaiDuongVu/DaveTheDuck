@@ -150,19 +150,4 @@ public class GameController : MonoBehaviour
     {
         tileCount--;
     }
-
-    public void Home()
-    {
-
-    }
-
-    public void Restart()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name, LoadSceneMode.Single);
-    }
-
-    public void NextLevel()
-    {
-
-    }
 }
