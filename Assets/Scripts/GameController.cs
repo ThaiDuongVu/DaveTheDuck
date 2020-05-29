@@ -75,7 +75,7 @@ public class GameController : MonoBehaviour
             if (!gameOver)
             {
                 SetGameOver();
-                gameOverMenu.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = "Level Failed";
+                gameOverMenu.transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = "Level Failed";
 
                 starRating = 0;
             }
@@ -90,7 +90,6 @@ public class GameController : MonoBehaviour
     private void SetGameOver()
     {
         Camera.main.GetComponent<Animator>().SetTrigger("gameOver");
-        Cursor.visible = true;
 
         gameOverMenu.SetActive(true);
         stars.GetComponent<StarsController>().SetStars(starRating);
