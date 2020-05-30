@@ -11,7 +11,7 @@ public class CursorController : MonoBehaviour
 
     public Image cursor;
 
-    private float joystickAcclerator = 13f;
+    private float joystickAcclerator = 15f;
     private float mouseAccelerator = 15f;
 
     private Vector2 clampPosition = new Vector2(385f, 215f);

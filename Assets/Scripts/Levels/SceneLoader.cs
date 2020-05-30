@@ -7,6 +7,9 @@ public class SceneLoader : MonoBehaviour
     private Animator cameraAnimator;
     public CameraController cameraController;
 
+    public LevelManager levelManager;
+    public GameController gameController;
+
     private void Awake()
     {
         cameraAnimator = Camera.main.GetComponent<Animator>();
@@ -33,6 +36,30 @@ public class SceneLoader : MonoBehaviour
     public void NextLevel()
     {
         PrepareLoadScene();
-        // cameraController.SetSceneToLoad("NextScene");
+
+        if (gameController.levelNumber < 10)
+        {
+            cameraController.SetSceneToLoad("Level0" + (gameController.levelNumber + 1));
+        }
+        else
+        {
+            cameraController.SetSceneToLoad("Level" + (gameController.levelNumber + 1));
+        }
+    }
+
+    public void PlayLevels()
+    {
+        if (levelManager.GetSelectedLevel() <= PlayerPrefs.GetInt("UnlockedLevels", 1))
+        {
+            PrepareLoadScene();
+            if (levelManager.GetSelectedLevel() < 10)
+            {
+                cameraController.SetSceneToLoad("Level0" + levelManager.GetSelectedLevel());
+            }
+            else
+            {
+                cameraController.SetSceneToLoad("Level" + levelManager.GetSelectedLevel());
+            }
+        }
     }
 }

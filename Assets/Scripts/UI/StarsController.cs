@@ -19,6 +19,11 @@ public class StarsController : MonoBehaviour
 
     public void SetStars(int rating)
     {
+        for (int i = 0; i < starsNum; i++)
+        {
+            stars[i].SetActive(false);
+        }
+
         for (int i = 0; i < rating; i++)
         {
             stars[i].SetActive(true);

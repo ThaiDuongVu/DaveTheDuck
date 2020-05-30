@@ -10,9 +10,4 @@ public class HomeController : MonoBehaviour
 
         Camera.main.GetComponent<Animator>().SetTrigger("gameOver");
     }
-    
-    private void Update()
-    {
-        
-    }
 }

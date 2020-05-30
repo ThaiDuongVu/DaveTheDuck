@@ -9990,7 +9990,7 @@ MonoBehaviour:
   nextLevelButton: {fileID: 555004569}
   timer: 15
   ratingMarker: 00000000050000000a000000
-  levelNumber: 1
+  levelNumber: 2
   levelText: {fileID: 2042649107}
 --- !u!4 &1712393131
 Transform:

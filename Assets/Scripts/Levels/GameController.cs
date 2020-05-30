@@ -29,8 +29,11 @@ public class GameController : MonoBehaviour
 
     public float timer;
 
-    private int starRating;
+    private int rating;
     public int[] ratingMarker;
+
+    public int levelNumber;
+    public TextMeshProUGUI levelText;
 
     private void Awake()
     {
@@ -55,6 +58,15 @@ public class GameController : MonoBehaviour
         canvasVisible = true;
         instructionsInGame.SetActive(true);
         instructionsMenu.SetActive(false);
+
+        if (levelNumber < 10)
+        {
+            levelText.text = "Level 0" + levelNumber;
+        }
+        else
+        {
+            levelText.text = "Level " + levelNumber;
+        }
     }
     
     private void Update()
@@ -85,7 +97,7 @@ public class GameController : MonoBehaviour
                 SetGameOver();
                 gameOverMenu.transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = "Level Failed";
 
-                starRating = 0;
+                rating = 0;
             }
         }
     }
@@ -100,16 +112,31 @@ public class GameController : MonoBehaviour
         Camera.main.GetComponent<Animator>().SetTrigger("gameOver");
 
         gameOverMenu.SetActive(true);
-        stars.GetComponent<StarsController>().SetStars(starRating);
+        stars.GetComponent<StarsController>().SetStars(rating);
 
         cursorController.ShowCursor();
 
         instructionsInGame.SetActive(false);
         instructionsMenu.SetActive(true);
 
-        if (starRating <= 0)
+        if (rating <= 0)
         {
             nextLevelButton.gameObject.SetActive(false);
+        }
+        else
+        {
+            if (levelNumber < PlayerPrefs.GetInt("MaxLevels"))
+            {
+                if (PlayerPrefs.GetInt("UnlockedLevels", 1) <= levelNumber)
+                {
+                    PlayerPrefs.SetInt("UnlockedLevels", levelNumber + 1);
+                }
+            }
+            
+            if (PlayerPrefs.GetInt("Rating" + levelNumber, 0) < rating)
+            {
+                PlayerPrefs.SetInt("Rating" + levelNumber, rating);
+            }
         }
 
         gameOver = true;
@@ -144,7 +171,7 @@ public class GameController : MonoBehaviour
 
     public int GetRating()
     {
-        return starRating;
+        return rating;
     }
 
     private void TileCountControl()
@@ -155,15 +182,15 @@ public class GameController : MonoBehaviour
             {
                 if (timer >= ratingMarker[2])
                 {
-                    starRating = 3;
+                    rating = 3;
                 }
                 else if (timer < ratingMarker[2] && timer >= ratingMarker[1])
                 {
-                    starRating = 2;
+                    rating = 2;
                 }
                 else
                 {
-                    starRating = 1;
+                    rating = 1;
                 }
 
                 SetGameOver();
