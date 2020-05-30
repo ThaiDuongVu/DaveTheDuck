@@ -15,6 +15,7 @@ public class CursorController : MonoBehaviour
     private float mouseAccelerator = 15f;
 
     public GameController gameController;
+    public GameObject buttons;
 
     private Vector2 clampPosition = new Vector2(385f, 215f);
 
@@ -37,19 +38,38 @@ public class CursorController : MonoBehaviour
 
     private void ClickControl()
     {
+        pointerEventData = new PointerEventData(eventSystem);
+        pointerEventData.position = cursor.transform.position;
+
+        List<RaycastResult> results = new List<RaycastResult>();
+        raycaster.Raycast(pointerEventData, results);
+
         if (Input.GetButtonDown("Fire1"))
         {
-            pointerEventData = new PointerEventData(eventSystem);
-            pointerEventData.position = cursor.transform.position;
-
-            List<RaycastResult> results = new List<RaycastResult>();
-            raycaster.Raycast(pointerEventData, results);
-
             foreach (RaycastResult result in results)
             {
                 if (result.gameObject.CompareTag("Button"))
                 {
                     result.gameObject.GetComponent<Button>().OnPointerClick(pointerEventData);
+                }
+            }
+        }
+
+        foreach (RaycastResult result in results)
+        {
+            if (result.gameObject.CompareTag("Button"))
+            {
+                for (int i = 0; i < buttons.transform.childCount; i++)
+                {
+                    buttons.transform.GetChild(i).GetComponent<ButtonController>().SetSize("small");
+                }
+                result.gameObject.GetComponent<ButtonController>().SetSize("large");
+            }
+            else
+            {
+                for (int i = 0; i < buttons.transform.childCount; i++)
+                {
+                    buttons.transform.GetChild(i).GetComponent<ButtonController>().SetSize("small");
                 }
             }
         }

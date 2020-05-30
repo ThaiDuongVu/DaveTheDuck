@@ -1155,6 +1155,7 @@ GameObject:
   - component: {fileID: 208163993}
   - component: {fileID: 208163992}
   - component: {fileID: 208163995}
+  - component: {fileID: 208163996}
   m_Layer: 8
   m_Name: RestartButton
   m_TagString: Button
@@ -1170,11 +1171,11 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 208163990}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -5}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 650520067}
-  m_RootOrder: 4
+  m_Father: {fileID: 773315488}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1291,6 +1292,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &208163996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 208163990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d79c07332c12364592a0efe8fe4ac1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &213240678
 GameObject:
   m_ObjectHideFlags: 0
@@ -1839,6 +1852,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cursor: {fileID: 1147216044}
   gameController: {fileID: 1712393130}
+  buttons: {fileID: 773315487}
 --- !u!1 &308731459
 GameObject:
   m_ObjectHideFlags: 0
@@ -3072,6 +3086,7 @@ GameObject:
   - component: {fileID: 555004570}
   - component: {fileID: 555004569}
   - component: {fileID: 555004568}
+  - component: {fileID: 555004572}
   m_Layer: 8
   m_Name: NextLevelButton
   m_TagString: Button
@@ -3087,11 +3102,11 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 555004566}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -5}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 650520067}
-  m_RootOrder: 5
+  m_Father: {fileID: 773315488}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3208,6 +3223,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 555004566}
   m_CullTransparentMesh: 0
+--- !u!114 &555004572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 555004566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d79c07332c12364592a0efe8fe4ac1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &636496169
 GameObject:
   m_ObjectHideFlags: 0
@@ -3350,9 +3377,7 @@ RectTransform:
   - {fileID: 1808218279}
   - {fileID: 202925484}
   - {fileID: 1176644896}
-  - {fileID: 1869463869}
-  - {fileID: 208163991}
-  - {fileID: 555004567}
+  - {fileID: 773315488}
   m_Father: {fileID: 293646954}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3765,6 +3790,44 @@ Transform:
   m_Father: {fileID: 636496170}
   m_RootOrder: 44
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &773315487
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 773315488}
+  m_Layer: 5
+  m_Name: Buttons
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &773315488
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 773315487}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1869463869}
+  - {fileID: 208163991}
+  - {fileID: 555004567}
+  m_Father: {fileID: 650520067}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &805728589
 GameObject:
   m_ObjectHideFlags: 0
@@ -9637,6 +9700,7 @@ GameObject:
   - component: {fileID: 1869463872}
   - component: {fileID: 1869463871}
   - component: {fileID: 1869463870}
+  - component: {fileID: 1869463874}
   m_Layer: 8
   m_Name: HomeButton
   m_TagString: Button
@@ -9652,11 +9716,11 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1869463868}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -5}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 650520067}
-  m_RootOrder: 3
+  m_Father: {fileID: 773315488}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -9773,6 +9837,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1869463868}
   m_CullTransparentMesh: 0
+--- !u!114 &1869463874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1869463868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d79c07332c12364592a0efe8fe4ac1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1878245715
 GameObject:
   m_ObjectHideFlags: 0
@@ -10620,6 +10696,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MainCamera
+      objectReference: {fileID: 0}
+    - target: {fileID: 762883631143802362, guid: 594226c648a7d8548b881d45a030efcc,
+        type: 3}
+      propertyPath: orthographic size
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 762883631143802365, guid: 594226c648a7d8548b881d45a030efcc,
         type: 3}
