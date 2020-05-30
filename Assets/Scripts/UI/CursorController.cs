@@ -14,10 +14,15 @@ public class CursorController : MonoBehaviour
     private float joystickAcclerator = 13f;
     private float mouseAccelerator = 15f;
 
-    public GameController gameController;
-    public GameObject buttons;
-
     private Vector2 clampPosition = new Vector2(385f, 215f);
+
+    public GameObject buttons;
+    public GameController gameController;
+
+    private string controlScheme = "";
+
+    public GameObject instructionsInGame;
+    public GameObject instructionsMenu;
 
     private void Awake()
     {
@@ -25,15 +30,21 @@ public class CursorController : MonoBehaviour
         eventSystem = gameObject.GetComponent<EventSystem>();
     }
 
+    private void Start()
+    {
+        if (gameController != null)
+        {
+            SetMenu(instructionsInGame, "mouse");
+        }
+
+        SetMenu(instructionsMenu, "gamepad");
+    }
+
 
     private void Update()
     {
         ClickControl();
-
-        if (gameController.GetGameOver())
-        {
-            MovementControl();
-        }
+        MovementControl();
     }
 
     private void ClickControl()
@@ -87,6 +98,8 @@ public class CursorController : MonoBehaviour
         Vector2 mouseMovement = new Vector2(mouseX, mouseY) * mouseAccelerator;
 
         cursor.GetComponent<RectTransform>().Translate(joystickMovement + mouseMovement);
+
+        ControlScheme(joystickMovement, mouseMovement);
         ClampMovement();
     }
 
@@ -124,5 +137,69 @@ public class CursorController : MonoBehaviour
     public void ShowCursor()
     {
         cursor.gameObject.SetActive(true);
+    }
+
+    private void ControlScheme(Vector3 joystickMovement, Vector3 mouseMovement)
+    {
+        if (mouseMovement != Vector3.zero)
+        {
+            if (controlScheme.Equals("gamepad") || controlScheme.Equals(""))
+            {
+                if (gameController != null)
+                {
+                    if (!gameController.GetGameOver())
+                    {
+                        SetMenu(instructionsInGame, "mouse");
+                    }
+                    else
+                    {
+                        SetMenu(instructionsMenu, "mouse");
+                    }
+                }
+                else
+                {
+                    SetMenu(instructionsMenu, "mouse");
+                }
+                
+                controlScheme = "mouse";
+            }
+        }
+        if (joystickMovement != Vector3.zero)
+        {
+            if (controlScheme.Equals("mouse") || controlScheme.Equals(""))
+            {
+                if (gameController != null)
+                {
+                    if (!gameController.GetGameOver())
+                    {
+                        SetMenu(instructionsInGame, "gamepad");
+                    }
+                    else
+                    {
+                        SetMenu(instructionsMenu, "gamepad");
+                    }
+                }
+                else
+                {
+                    SetMenu(instructionsMenu, "gamepad");
+                }
+                
+                controlScheme = "gamepad";
+            }
+        }
+    }
+
+    private void SetMenu(GameObject menu, string mode)
+    {
+        if (mode.Equals("mouse"))
+        {
+            menu.transform.GetChild(0).gameObject.SetActive(false);
+            menu.transform.GetChild(1).gameObject.SetActive(true);
+        }
+        else
+        {
+            menu.transform.GetChild(0).gameObject.SetActive(true);
+            menu.transform.GetChild(1).gameObject.SetActive(false);
+        }
     }
 }

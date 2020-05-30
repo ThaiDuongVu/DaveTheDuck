@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 
 public class GameController : MonoBehaviour
@@ -22,7 +23,9 @@ public class GameController : MonoBehaviour
     public GameObject stars;
 
     public GameObject instructionsInGame;
-    public GameObject instructionsGameOver;
+    public GameObject instructionsMenu;
+
+    public Button nextLevelButton;
 
     public float timer;
 
@@ -51,7 +54,7 @@ public class GameController : MonoBehaviour
 
         canvasVisible = true;
         instructionsInGame.SetActive(true);
-        instructionsGameOver.SetActive(false);
+        instructionsMenu.SetActive(false);
     }
     
     private void Update()
@@ -102,7 +105,12 @@ public class GameController : MonoBehaviour
         cursorController.ShowCursor();
 
         instructionsInGame.SetActive(false);
-        instructionsGameOver.SetActive(true);
+        instructionsMenu.SetActive(true);
+
+        if (starRating <= 0)
+        {
+            nextLevelButton.gameObject.SetActive(false);
+        }
 
         gameOver = true;
     }
