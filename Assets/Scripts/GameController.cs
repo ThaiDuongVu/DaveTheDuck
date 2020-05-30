@@ -21,6 +21,9 @@ public class GameController : MonoBehaviour
     public GameObject gameOverMenu;
     public GameObject stars;
 
+    public GameObject instructionsInGame;
+    public GameObject instructionsGameOver;
+
     public float timer;
 
     private int starRating;
@@ -47,6 +50,8 @@ public class GameController : MonoBehaviour
         countDown += 1f;
 
         canvasVisible = true;
+        instructionsInGame.SetActive(true);
+        instructionsGameOver.SetActive(false);
     }
     
     private void Update()
@@ -95,6 +100,9 @@ public class GameController : MonoBehaviour
         stars.GetComponent<StarsController>().SetStars(starRating);
 
         cursorController.ShowCursor();
+
+        instructionsInGame.SetActive(false);
+        instructionsGameOver.SetActive(true);
 
         gameOver = true;
     }

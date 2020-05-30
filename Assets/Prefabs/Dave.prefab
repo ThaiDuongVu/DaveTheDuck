@@ -288,6 +288,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameController: {fileID: 0}
+  instructionsInGame: {fileID: 0}
+  instructionsGameOver: {fileID: 0}
 --- !u!54 &519745986060853647
 Rigidbody:
   m_ObjectHideFlags: 0

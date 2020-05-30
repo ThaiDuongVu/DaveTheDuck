@@ -12,9 +12,21 @@ public class PlayerController : MonoBehaviour
 
     private string controlScheme = "";
 
+    public GameObject instructionsInGame;
+    public GameObject instructionsGameOver;
+
     private void Awake()
     {
         animator = gameObject.GetComponent<Animator>();
+    }
+
+    private void Start()
+    {
+        instructionsInGame.transform.GetChild(0).gameObject.SetActive(false);
+        instructionsInGame.transform.GetChild(1).gameObject.SetActive(true);
+
+        instructionsGameOver.transform.GetChild(0).gameObject.SetActive(true);
+        instructionsGameOver.transform.GetChild(1).gameObject.SetActive(false);
     }
 
     private void Update()
@@ -113,6 +125,17 @@ public class PlayerController : MonoBehaviour
         {
             if (controlScheme.Equals("gamepad") || controlScheme.Equals(""))
             {
+                if (!gameController.GetGameOver())
+                {
+                    instructionsInGame.transform.GetChild(0).gameObject.SetActive(false);
+                    instructionsInGame.transform.GetChild(1).gameObject.SetActive(true);
+                }
+                else
+                {
+                    instructionsGameOver.transform.GetChild(0).gameObject.SetActive(false);
+                    instructionsGameOver.transform.GetChild(1).gameObject.SetActive(true);
+                }
+                
                 controlScheme = "mouse";
             }
         }
@@ -120,6 +143,17 @@ public class PlayerController : MonoBehaviour
         {
             if (controlScheme.Equals("mouse") || controlScheme.Equals(""))
             {
+                if (!gameController.GetGameOver())
+                {
+                    instructionsInGame.transform.GetChild(0).gameObject.SetActive(true);
+                    instructionsInGame.transform.GetChild(1).gameObject.SetActive(false);
+                }
+                else
+                {
+                    instructionsGameOver.transform.GetChild(0).gameObject.SetActive(true);
+                    instructionsGameOver.transform.GetChild(1).gameObject.SetActive(false);
+                }
+                
                 controlScheme = "gamepad";
             }
         }

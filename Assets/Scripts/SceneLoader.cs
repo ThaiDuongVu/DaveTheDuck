@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class SceneLoader : MonoBehaviour
 {
-    public GameObject gameOverMenu;
+    public Canvas canvas;
     private Animator cameraAnimator;
     public CameraController cameraController;
 
@@ -14,7 +14,7 @@ public class SceneLoader : MonoBehaviour
     
     private void PrepareLoadScene()
     {
-        gameOverMenu.SetActive(false);
+        canvas.enabled = false;
         cameraAnimator.SetTrigger("zoomIn");
     }
 

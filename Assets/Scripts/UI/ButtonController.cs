@@ -3,6 +3,8 @@
 public class ButtonController : MonoBehaviour
 {
     private string size = "small";
+    private float smallScale = 1f;
+    private float largeScale = 1.3f;
 
     public void SetSize(string newSize)
     {
@@ -12,8 +14,8 @@ public class ButtonController : MonoBehaviour
             {
                 Vector3 scale = gameObject.GetComponent<RectTransform>().localScale;
 
-                scale.x = 1.5f;
-                scale.y = 1.5f;
+                scale.x = largeScale;
+                scale.y = largeScale;
 
                 gameObject.GetComponent<RectTransform>().localScale = scale;
 
@@ -26,18 +28,13 @@ public class ButtonController : MonoBehaviour
             {
                 Vector3 scale = gameObject.GetComponent<RectTransform>().localScale;
 
-                scale.x = 1f;
-                scale.y = 1f;
+                scale.x = smallScale;
+                scale.y = smallScale;
 
                 gameObject.GetComponent<RectTransform>().localScale = scale;
 
                 size = "small";
             }
         }
-    }
-
-    public string GetSize()
-    {
-        return size;
     }
 }
