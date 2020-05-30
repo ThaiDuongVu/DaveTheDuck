@@ -8,7 +8,6 @@ public class PlayerController : MonoBehaviour
     private Animator animator;
     public GameController gameController;
 
-    private Vector3 playerPosition;
     private Vector3 clampPosition = new Vector3(12f, 0.8f, 12f);
 
     private void Awake()
@@ -46,6 +45,7 @@ public class PlayerController : MonoBehaviour
 
     private void ClampMovement()
     {
+        Vector3 playerPosition;
         playerPosition = gameObject.transform.position;
 
         if (playerPosition.x > clampPosition.x)

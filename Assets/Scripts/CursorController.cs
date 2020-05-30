@@ -11,10 +11,12 @@ public class CursorController : MonoBehaviour
 
     public Image cursor;
 
-    private float joystickAcclerator = 10f;
+    private float joystickAcclerator = 12f;
     private float mouseAccelerator = 15f;
 
     public GameController gameController;
+
+    private Vector2 clampPosition = new Vector2(385f, 215f);
 
     private void Awake()
     {
@@ -65,6 +67,33 @@ public class CursorController : MonoBehaviour
         Vector2 mouseMovement = new Vector2(mouseX, mouseY) * mouseAccelerator;
 
         cursor.GetComponent<RectTransform>().Translate(joystickMovement + mouseMovement);
+        ClampMovement();
+    }
+
+    private void ClampMovement()
+    {
+        Vector2 cursorPosition;
+        cursorPosition = cursor.GetComponent<RectTransform>().anchoredPosition;
+
+        if (cursorPosition.x > clampPosition.x)
+        {
+            cursorPosition.x = clampPosition.x;
+        }
+        else if (cursorPosition.x < -clampPosition.x)
+        {
+            cursorPosition.x = -clampPosition.x;
+        }
+
+        if (cursorPosition.y > clampPosition.y)
+        {
+            cursorPosition.y = clampPosition.y;
+        }
+        else if (cursorPosition.y < -clampPosition.y)
+        {
+            cursorPosition.y = -clampPosition.y;
+        }
+
+        cursor.GetComponent<RectTransform>().anchoredPosition = cursorPosition;
     }
 
     public void HideCursor()
