@@ -34,10 +34,10 @@ public class CursorController : MonoBehaviour
     {
         if (gameController != null)
         {
-            SetMenu(instructionsInGame, "mouse");
+            SetInstruction(instructionsInGame, "mouse");
         }
 
-        SetMenu(instructionsMenu, "gamepad");
+        SetInstruction(instructionsMenu, "mouse");
     }
 
 
@@ -75,12 +75,14 @@ public class CursorController : MonoBehaviour
                     buttons.transform.GetChild(i).GetComponent<ButtonController>().SetSize("small");
                 }
                 result.gameObject.GetComponent<ButtonController>().SetSize("large");
+                result.gameObject.GetComponent<ButtonController>().SetInstructionText();
             }
             else
             {
                 for (int i = 0; i < buttons.transform.childCount; i++)
                 {
                     buttons.transform.GetChild(i).GetComponent<ButtonController>().SetSize("small");
+                    buttons.transform.GetChild(i).GetComponent<ButtonController>().ResetInstruction();
                 }
             }
         }
@@ -147,20 +149,10 @@ public class CursorController : MonoBehaviour
             {
                 if (gameController != null)
                 {
-                    if (!gameController.GetGameOver())
-                    {
-                        SetMenu(instructionsInGame, "mouse");
-                    }
-                    else
-                    {
-                        SetMenu(instructionsMenu, "mouse");
-                    }
+                    SetInstruction(instructionsInGame, "mouse");
                 }
-                else
-                {
-                    SetMenu(instructionsMenu, "mouse");
-                }
-                
+                SetInstruction(instructionsMenu, "mouse");
+
                 controlScheme = "mouse";
             }
         }
@@ -170,26 +162,16 @@ public class CursorController : MonoBehaviour
             {
                 if (gameController != null)
                 {
-                    if (!gameController.GetGameOver())
-                    {
-                        SetMenu(instructionsInGame, "gamepad");
-                    }
-                    else
-                    {
-                        SetMenu(instructionsMenu, "gamepad");
-                    }
+                    SetInstruction(instructionsInGame, "gamepad");
                 }
-                else
-                {
-                    SetMenu(instructionsMenu, "gamepad");
-                }
+                SetInstruction(instructionsMenu, "gamepad");
                 
                 controlScheme = "gamepad";
             }
         }
     }
 
-    private void SetMenu(GameObject menu, string mode)
+    private void SetInstruction(GameObject menu, string mode)
     {
         if (mode.Equals("mouse"))
         {

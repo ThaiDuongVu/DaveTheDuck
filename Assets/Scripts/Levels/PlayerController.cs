@@ -46,9 +46,9 @@ public class PlayerController : MonoBehaviour
         {
             if (!gameController.GetGameOver() && gameController.GetGameStart())
             {
-                if (joystickMovement != Vector3.zero)
+                if (joystickMovement + mouseMovement != Vector3.zero)
                 {
-                    gameObject.transform.rotation = Quaternion.LookRotation(joystickMovement);
+                    gameObject.transform.rotation = Quaternion.LookRotation(joystickMovement + mouseMovement);
                 }
 
                 gameObject.transform.Translate((joystickMovement + mouseMovement) * speed * Time.deltaTime, Space.World);

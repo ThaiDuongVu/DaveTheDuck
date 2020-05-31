@@ -4,22 +4,27 @@ public class TileController : MonoBehaviour
 {
     private MeshRenderer meshRenderer;
 
-    private Material defaultMaterial;
-    public Material paintMaterial;
+    public Material defaultMaterial;
+    private Material paintMaterial;
 
     private bool painted;
 
     public GameController gameController;
 
+    private Animator animator;
+
     private void Awake()
     {
         meshRenderer = gameObject.transform.GetComponent<MeshRenderer>();
-        defaultMaterial = meshRenderer.material;
+        paintMaterial = meshRenderer.material;
+
+        animator = gameObject.GetComponent<Animator>();
     }
 
     private void Start()
     {
         painted = false;
+        meshRenderer.material = defaultMaterial;
     }
 
     private void OnCollisionEnter(Collision other)
@@ -28,7 +33,10 @@ public class TileController : MonoBehaviour
         {
             if (!painted)
             {
+                animator.SetTrigger("pop");
                 SetMaterial();
+
+                painted = true;
             }
         }
     }
@@ -37,6 +45,5 @@ public class TileController : MonoBehaviour
     {
         meshRenderer.material = paintMaterial;
         gameController.DecreaseTile();
-        painted = true;
     }
 }

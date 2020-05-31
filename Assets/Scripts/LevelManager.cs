@@ -10,6 +10,8 @@ public class LevelManager : MonoBehaviour
     private int selectedLevel;
 
     public StarsController starsController;
+    public Animator menuAnimator;
+
     public int maxLevels;
 
     private Color32 lockedTextColor;
@@ -73,6 +75,7 @@ public class LevelManager : MonoBehaviour
         }
 
         starsController.SetStars(PlayerPrefs.GetInt("Rating" + selectedLevel, 0));
+        menuAnimator.SetTrigger("starsPop");
     }
 
     public int GetSelectedLevel()

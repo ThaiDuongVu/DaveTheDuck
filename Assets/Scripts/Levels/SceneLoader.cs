@@ -33,6 +33,16 @@ public class SceneLoader : MonoBehaviour
         cameraController.SetSceneToLoad(SceneManager.GetActiveScene().name);
     }
 
+    public void Settings()
+    {
+        
+    }
+
+    public void Exit()
+    {
+        Application.Quit();
+    }
+
     public void NextLevel()
     {
         PrepareLoadScene();
