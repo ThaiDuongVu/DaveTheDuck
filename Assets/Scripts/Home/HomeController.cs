@@ -2,12 +2,26 @@
 
 public class HomeController : MonoBehaviour
 {
-    
+    private bool menuSlideIn;
+    public Animator menuAnimator;
+
     private void Start()
     {
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
 
-        Camera.main.GetComponent<Animator>().SetTrigger("gameOver");
+        menuSlideIn = false;
+    }
+
+    private void Update()
+    {
+        if (!menuSlideIn)
+        {
+            if (Camera.main.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("Empty"))
+            {
+                menuAnimator.SetTrigger("slideIn");
+                menuSlideIn = true;
+            }
+        }
     }
 }

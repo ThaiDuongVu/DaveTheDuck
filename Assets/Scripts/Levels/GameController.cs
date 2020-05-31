@@ -13,6 +13,7 @@ public class GameController : MonoBehaviour
     private float countDown = 3f;
 
     public Canvas canvas;
+    public Canvas secondaryCanvas;
     private bool canvasVisible;
 
     public GameObject player;
@@ -55,7 +56,9 @@ public class GameController : MonoBehaviour
         timer += 1f;
         countDown += 1f;
 
+        secondaryCanvas.enabled = false;
         canvasVisible = true;
+
         instructionsInGame.SetActive(true);
         instructionsMenu.SetActive(false);
 
@@ -109,12 +112,11 @@ public class GameController : MonoBehaviour
 
     private void SetGameOver()
     {
-        Camera.main.GetComponent<Animator>().SetTrigger("gameOver");
-
         gameOverMenu.SetActive(true);
         stars.GetComponent<StarsController>().SetStars(rating);
 
         cursorController.ShowCursor();
+        gameOverMenu.GetComponent<Animator>().SetTrigger("slideIn");
 
         instructionsInGame.SetActive(false);
         instructionsMenu.SetActive(true);
@@ -212,8 +214,11 @@ public class GameController : MonoBehaviour
                 if (canvasVisible)
                 {
                     canvas.enabled = false;
+                    secondaryCanvas.enabled = true;
+
                     canvasVisible = false;
 
+                    Camera.main.GetComponent<Animator>().SetTrigger("pan");
                     player.SetActive(false);
                 }
             }
@@ -222,8 +227,11 @@ public class GameController : MonoBehaviour
                 if (!canvasVisible)
                 {
                     canvas.enabled = true;
+                    secondaryCanvas.enabled = false;
+
                     canvasVisible = true;
 
+                    Camera.main.GetComponent<Animator>().SetTrigger("panBack");
                     player.SetActive(true);
                 }
             }
