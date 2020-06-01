@@ -5,6 +5,7 @@ using TMPro;
 public class GameController : MonoBehaviour
 {
     public GameObject floor;
+    public GameObject floorFeatures;
     private GameObject[] tiles;
 
     private int tileCount;
@@ -214,9 +215,10 @@ public class GameController : MonoBehaviour
                 if (canvasVisible)
                 {
                     canvas.enabled = false;
-                    secondaryCanvas.enabled = true;
-
                     canvasVisible = false;
+
+                    secondaryCanvas.enabled = true;
+                    floorFeatures.SetActive(false);
 
                     Camera.main.GetComponent<Animator>().SetTrigger("pan");
                     player.SetActive(false);
@@ -227,9 +229,10 @@ public class GameController : MonoBehaviour
                 if (!canvasVisible)
                 {
                     canvas.enabled = true;
-                    secondaryCanvas.enabled = false;
-
                     canvasVisible = true;
+
+                    secondaryCanvas.enabled = false;
+                    floorFeatures.SetActive(true);
 
                     Camera.main.GetComponent<Animator>().SetTrigger("panBack");
                     player.SetActive(true);

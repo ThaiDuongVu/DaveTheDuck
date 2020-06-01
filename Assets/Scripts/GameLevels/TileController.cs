@@ -12,6 +12,7 @@ public class TileController : MonoBehaviour
     public GameController gameController;
 
     private Animator animator;
+    private bool popped;
 
     private void Awake()
     {
@@ -25,6 +26,22 @@ public class TileController : MonoBehaviour
     {
         painted = false;
         meshRenderer.material = defaultMaterial;
+
+        popped = false;
+    }
+    
+    private void Update()
+    {
+        if (!popped)
+        {
+            if (gameController.GetGameOver())
+            {
+                animator.speed = Random.Range(0.6f, 1f);
+                animator.SetTrigger("pop");
+                
+                popped = true;
+            }
+        }
     }
 
     private void OnCollisionEnter(Collision other)

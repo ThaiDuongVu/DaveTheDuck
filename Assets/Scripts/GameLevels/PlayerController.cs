@@ -25,10 +25,10 @@ public class PlayerController : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
-        if (other.gameObject.CompareTag("Tile"))
-        {
-            rgbody.useGravity = false;
-        }
+        // if (other.gameObject.CompareTag("Tile"))
+        // {
+        //     rgbody.useGravity = false;
+        // }
     }
 
     private void MovementControl()
