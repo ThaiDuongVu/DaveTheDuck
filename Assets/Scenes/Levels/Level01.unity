@@ -12084,6 +12084,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   floor: {fileID: 636496169}
+  floorFeatures: {fileID: 0}
   canvas: {fileID: 293646953}
   secondaryCanvas: {fileID: 1296544055}
   player: {fileID: 1989886946}

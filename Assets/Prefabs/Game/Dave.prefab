@@ -288,6 +288,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameController: {fileID: 0}
+  crosshair: {fileID: 0}
 --- !u!54 &519745986060853647
 Rigidbody:
   m_ObjectHideFlags: 0

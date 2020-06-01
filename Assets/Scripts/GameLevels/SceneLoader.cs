@@ -35,7 +35,8 @@ public class SceneLoader : MonoBehaviour
 
     public void Settings()
     {
-        
+        PrepareLoadScene();
+        cameraController.SetSceneToLoad("Settings");
     }
 
     public void Exit()

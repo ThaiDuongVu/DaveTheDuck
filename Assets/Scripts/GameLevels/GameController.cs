@@ -40,6 +40,13 @@ public class GameController : MonoBehaviour
     private void Awake()
     {
         tileCount = floor.transform.childCount;
+        // for (int i = 0; i < floor.transform.childCount; i++)
+        // {
+        //     if (floor.transform.GetChild(i).CompareTag("Tile"))
+        //     {
+        //         tileCount++;
+        //     }
+        // }
         tiles = new GameObject[tileCount];
     }
     
@@ -218,7 +225,10 @@ public class GameController : MonoBehaviour
                     canvasVisible = false;
 
                     secondaryCanvas.enabled = true;
-                    floorFeatures.SetActive(false);
+                    if (floorFeatures != null)
+                    {
+                        floorFeatures.SetActive(false);
+                    }
 
                     Camera.main.GetComponent<Animator>().SetTrigger("pan");
                     player.SetActive(false);
@@ -232,7 +242,10 @@ public class GameController : MonoBehaviour
                     canvasVisible = true;
 
                     secondaryCanvas.enabled = false;
-                    floorFeatures.SetActive(true);
+                    if (floorFeatures != null)
+                    {
+                        floorFeatures.SetActive(true);
+                    }
 
                     Camera.main.GetComponent<Animator>().SetTrigger("panBack");
                     player.SetActive(true);

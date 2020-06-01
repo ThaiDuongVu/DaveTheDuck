@@ -12,6 +12,8 @@ public class PlayerController : MonoBehaviour
 
     private Rigidbody rgbody;
 
+    public GameObject crosshair;
+
     private void Awake()
     {
         animator = gameObject.GetComponent<Animator>();
@@ -21,14 +23,6 @@ public class PlayerController : MonoBehaviour
     private void Update()
     {
         MovementControl();
-    }
-
-    private void OnCollisionEnter(Collision other)
-    {
-        // if (other.gameObject.CompareTag("Tile"))
-        // {
-        //     rgbody.useGravity = false;
-        // }
     }
 
     private void MovementControl()
