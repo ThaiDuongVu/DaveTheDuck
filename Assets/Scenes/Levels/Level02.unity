@@ -2820,7 +2820,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 293646954}
-  m_RootOrder: 2
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3057,10 +3057,10 @@ RectTransform:
   m_Children:
   - {fileID: 706330411}
   - {fileID: 2042649106}
-  - {fileID: 276543751}
   - {fileID: 650520067}
   - {fileID: 1144514849}
   - {fileID: 1185114594}
+  - {fileID: 276543751}
   - {fileID: 284098488}
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -6742,7 +6742,7 @@ RectTransform:
   - {fileID: 1176644896}
   - {fileID: 773315488}
   m_Father: {fileID: 293646954}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -13413,7 +13413,7 @@ RectTransform:
   - {fileID: 640119875}
   - {fileID: 1259924769}
   m_Father: {fileID: 293646954}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -14044,7 +14044,7 @@ RectTransform:
   - {fileID: 192049560}
   - {fileID: 203866692}
   m_Father: {fileID: 293646954}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -19708,6 +19708,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   floor: {fileID: 636496169}
+  floorFeatures: {fileID: 0}
   canvas: {fileID: 293646953}
   secondaryCanvas: {fileID: 960797711}
   player: {fileID: 1989886946}
@@ -19718,7 +19719,6 @@ MonoBehaviour:
   instructionsMenu: {fileID: 1185114593}
   nextLevelButton: {fileID: 555004569}
   timer: 20
-  ratingMarker: 00000000050000000a000000
   levelNumber: 2
   levelText: {fileID: 2042649107}
 --- !u!4 &1712393131

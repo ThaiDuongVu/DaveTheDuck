@@ -32,7 +32,7 @@ public class GameController : MonoBehaviour
     public float timer;
 
     private int rating;
-    public int[] ratingMarker;
+    private int[] ratingMarker;
 
     public int levelNumber;
     public TextMeshProUGUI levelText;
@@ -40,13 +40,6 @@ public class GameController : MonoBehaviour
     private void Awake()
     {
         tileCount = floor.transform.childCount;
-        // for (int i = 0; i < floor.transform.childCount; i++)
-        // {
-        //     if (floor.transform.GetChild(i).CompareTag("Tile"))
-        //     {
-        //         tileCount++;
-        //     }
-        // }
         tiles = new GameObject[tileCount];
     }
     
@@ -78,6 +71,8 @@ public class GameController : MonoBehaviour
         {
             levelText.text = "Level " + levelNumber;
         }
+
+        SetRatingMarker();
     }
     
     private void Update()
@@ -182,6 +177,15 @@ public class GameController : MonoBehaviour
     public int GetRating()
     {
         return rating;
+    }
+
+    private void SetRatingMarker()
+    {
+        ratingMarker = new int[3];
+        for (int i = 0; i < 3; i++)
+        {
+            ratingMarker[i] = (int)((timer / 3f) * i);
+        }
     }
 
     private void TileCountControl()
