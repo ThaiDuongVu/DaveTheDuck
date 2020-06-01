@@ -12,8 +12,6 @@ public class PlayerController : MonoBehaviour
 
     private Rigidbody rgbody;
 
-    public GameObject crosshair;
-
     private void Awake()
     {
         animator = gameObject.GetComponent<Animator>();

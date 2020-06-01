@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class GameController : MonoBehaviour
@@ -37,6 +38,8 @@ public class GameController : MonoBehaviour
     public int levelNumber;
     public TextMeshProUGUI levelText;
 
+    public TextMeshProUGUI fpsText;
+
     private void Awake()
     {
         tileCount = floor.transform.childCount;
@@ -54,7 +57,15 @@ public class GameController : MonoBehaviour
         gameOverMenu.SetActive(false);
         gameOver = false;
 
-        timer += 1f;
+        if (SceneManager.GetActiveScene().name.Equals("PracticeArena"))
+        {
+            timer = 0f;
+        }
+        else
+        {
+            timer += 1f;
+        }
+        
         countDown += 1f;
 
         secondaryCanvas.enabled = false;
@@ -63,13 +74,9 @@ public class GameController : MonoBehaviour
         instructionsInGame.SetActive(true);
         instructionsMenu.SetActive(false);
 
-        if (levelNumber < 10)
+        if (PlayerPrefs.GetString("ShowFPS", "On").Equals("Off"))
         {
-            levelText.text = "Level 0" + levelNumber;
-        }
-        else
-        {
-            levelText.text = "Level " + levelNumber;
+            fpsText.gameObject.SetActive(false);
         }
 
         SetRatingMarker();
@@ -88,22 +95,37 @@ public class GameController : MonoBehaviour
         {
             StartGame();
         }
+
+        if (PlayerPrefs.GetString("ShowFPS", "On").Equals("On"))
+        {
+            fpsText.text = ((int)(1 / Time.deltaTime)).ToString();
+        }
     }
 
     private void TimerControl()
     {
-        if (timer > 1f)
-        {
-            timer -= Time.deltaTime;
-        }
-        else
+        if (SceneManager.GetActiveScene().name.Equals("PracticeArena"))
         {
             if (!gameOver)
             {
-                SetGameOver();
-                gameOverMenu.transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = "Level Failed";
+                timer += Time.deltaTime;
+            }
+        }
+        else
+        {
+            if (timer > 1f)
+            {
+                timer -= Time.deltaTime;
+            }
+            else
+            {
+                if (!gameOver)
+                {
+                    SetGameOver();
+                    gameOverMenu.transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = "Level Failed";
 
-                rating = 0;
+                    rating = 0;
+                }
             }
         }
     }
@@ -192,22 +214,29 @@ public class GameController : MonoBehaviour
     {
         if (tileCount <= 0)
         {
-            if (!gameOver)
+            if (SceneManager.GetActiveScene().name.Equals("PracticeArena"))
             {
-                if (timer >= ratingMarker[2])
-                {
-                    rating = 3;
-                }
-                else if (timer < ratingMarker[2] && timer >= ratingMarker[1])
-                {
-                    rating = 2;
-                }
-                else
-                {
-                    rating = 1;
-                }
-
+                rating = 3;
                 SetGameOver();
+            }
+            else
+            {
+                if (!gameOver)
+                {
+                    if (timer >= ratingMarker[2])
+                    {
+                        rating = 3;
+                    }
+                    else if (timer < ratingMarker[2] && timer >= ratingMarker[1])
+                    {
+                        rating = 2;
+                    }
+                    else
+                    {
+                        rating = 1;
+                    }
+                    SetGameOver();
+                }
             }
         }
     }

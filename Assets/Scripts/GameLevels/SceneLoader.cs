@@ -39,6 +39,12 @@ public class SceneLoader : MonoBehaviour
         cameraController.SetSceneToLoad("Settings");
     }
 
+    public void Practice()
+    {
+        PrepareLoadScene();
+        cameraController.SetSceneToLoad("PracticeArena");
+    }
+
     public void Exit()
     {
         Application.Quit();

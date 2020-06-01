@@ -13,6 +13,9 @@ public class SettingsController : MonoBehaviour
 
     private string aud;
     public TextMeshProUGUI audioText;
+
+    private string showFPS;
+    public TextMeshProUGUI fpsText;
     
     private void Start()
     {
@@ -31,6 +34,8 @@ public class SettingsController : MonoBehaviour
         resolutionY[2] = 768;
         resolutionY[3] = 720;
         resolutionY[4] = 576;
+
+        showFPS = PlayerPrefs.GetString("ShowFPS", "On");
 
         Apply();
     }
@@ -88,6 +93,20 @@ public class SettingsController : MonoBehaviour
         Apply();
     }
 
+    public void ToggleShowFPS()
+    {
+        if (showFPS.Equals("On"))
+        {
+            showFPS = "Off";
+        }
+        else
+        {
+            showFPS = "On";
+        }
+
+        Apply();
+    }
+
     private void Apply()
     {
         PlayerPrefs.SetString("FullScreen", fullScreen);
@@ -98,6 +117,9 @@ public class SettingsController : MonoBehaviour
 
         PlayerPrefs.SetInt("ResolutionIndex", resolutionIndex);
         resolutionText.text = resolutionX[resolutionIndex].ToString() + "." + resolutionY[resolutionIndex].ToString();
+
+        PlayerPrefs.SetString("ShowFPS", showFPS);
+        fpsText.text = showFPS;
 
         if (fullScreen.Equals("On"))
         {

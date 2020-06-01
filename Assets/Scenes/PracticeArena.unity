@@ -12253,7 +12253,7 @@ MonoBehaviour:
   instructionsMenu: {fileID: 1185114593}
   nextLevelButton: {fileID: 555004569}
   timer: 15
-  levelNumber: 1
+  levelNumber: 0
   levelText: {fileID: 2042649107}
   fpsText: {fileID: 1574086554}
 --- !u!4 &1712393131
@@ -14694,8 +14694,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -340, y: 210}
-  m_SizeDelta: {x: 100, y: 20}
+  m_AnchoredPosition: {x: -290, y: 210}
+  m_SizeDelta: {x: 200, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2042649107
 MonoBehaviour:
@@ -14716,7 +14716,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Level 01
+  m_text: Practice Arena
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d7242b5bc14631747bafdd82096dca1f, type: 2}
   m_sharedMaterial: {fileID: -2429614902282235979, guid: d7242b5bc14631747bafdd82096dca1f,
@@ -14786,7 +14786,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 2042649107}
-    characterCount: 8
+    characterCount: 14
     spriteCount: 0
     spaceCount: 1
     wordCount: 2
