@@ -16,6 +16,9 @@ public class SettingsController : MonoBehaviour
 
     private string showFPS;
     public TextMeshProUGUI fpsText;
+
+    private string font;
+    public TextMeshProUGUI fontText;
     
     private void Start()
     {
@@ -36,6 +39,7 @@ public class SettingsController : MonoBehaviour
         resolutionY[4] = 576;
 
         showFPS = PlayerPrefs.GetString("ShowFPS", "On");
+        font = PlayerPrefs.GetString("Font", "Stylized");
 
         Apply();
     }
@@ -107,6 +111,20 @@ public class SettingsController : MonoBehaviour
         Apply();
     }
 
+    public void ToggleFont()
+    {
+        if (font.Equals("Stylized"))
+        {
+            font = "Basic";
+        }
+        else
+        {
+            font = "Stylized";
+        }
+
+        Apply();
+    }
+
     private void Apply()
     {
         PlayerPrefs.SetString("FullScreen", fullScreen);
@@ -120,6 +138,9 @@ public class SettingsController : MonoBehaviour
 
         PlayerPrefs.SetString("ShowFPS", showFPS);
         fpsText.text = showFPS;
+
+        PlayerPrefs.SetString("Font", font);
+        fontText.text = font;
 
         if (fullScreen.Equals("On"))
         {
