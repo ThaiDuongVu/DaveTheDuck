@@ -9,10 +9,12 @@ public class TeleportationPadController : MonoBehaviour
     private float delay = 1f;
 
     private Animator animator;
+    private ParticleSystem burst;
 
     private void Awake()
     {
         animator = gameObject.GetComponent<Animator>();
+        burst = gameObject.transform.GetChild(2).GetComponent<ParticleSystem>();
     }
     
     private void Start()
@@ -43,6 +45,7 @@ public class TeleportationPadController : MonoBehaviour
     public void Pop()
     {
         animator.SetTrigger("pop");
+        burst.Play();
     }
 
     private void SetPosition(GameObject other, Vector3 position)
