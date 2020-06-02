@@ -204,10 +204,9 @@ public class GameController : MonoBehaviour
     private void SetRatingMarker()
     {
         ratingMarker = new int[3];
-        for (int i = 0; i < 3; i++)
-        {
-            ratingMarker[i] = (int)((timer / 3f) * i);
-        }
+        ratingMarker[2] = (int)((timer / 6f) * 3);
+        ratingMarker[1] = (int)((timer / 6f) * 1);
+        ratingMarker[0] = 0;
     }
 
     private void TileCountControl()
@@ -258,6 +257,10 @@ public class GameController : MonoBehaviour
                     canvasVisible = false;
 
                     secondaryCanvas.enabled = true;
+                    if (rating <= 0)
+                    {
+                        secondaryCanvas.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = "???";
+                    }
                     if (floorFeatures != null)
                     {
                         floorFeatures.SetActive(false);

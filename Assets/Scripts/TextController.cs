@@ -17,7 +17,7 @@ public class TextController : MonoBehaviour
     
     private void Start()
     {
-        font = "Stylized";//PlayerPrefs.GetString("Font", "Stylized");
+        font = "Stylized";
     }
     
     private void Update()

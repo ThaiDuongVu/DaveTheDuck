@@ -7,6 +7,13 @@ public class TeleportationPadController : MonoBehaviour
 
     private bool enable;
     private float delay = 1f;
+
+    private Animator animator;
+
+    private void Awake()
+    {
+        animator = gameObject.GetComponent<Animator>();
+    }
     
     private void Start()
     {
@@ -27,7 +34,15 @@ public class TeleportationPadController : MonoBehaviour
         {
             SetPosition(player, otherPad.gameObject.transform.position);
             otherPad.StartCoroutine("TemporaryDisable");
+
+            Pop();
+            otherPad.Pop();
         }
+    }
+
+    public void Pop()
+    {
+        animator.SetTrigger("pop");
     }
 
     private void SetPosition(GameObject other, Vector3 position)

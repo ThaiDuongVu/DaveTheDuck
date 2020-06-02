@@ -10,12 +10,11 @@ public class PlayerController : MonoBehaviour
 
     private Vector3 clampPosition = new Vector3(12f, 0.8f, 12f);
 
-    private Rigidbody rgbody;
+    public GameObject pad;
 
     private void Awake()
     {
         animator = gameObject.GetComponent<Animator>();
-        rgbody = gameObject.GetComponent<Rigidbody>();
     }
 
     private void Update()
