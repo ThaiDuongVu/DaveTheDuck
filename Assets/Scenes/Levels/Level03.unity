@@ -17531,6 +17531,7 @@ MonoBehaviour:
   instructionsMenu: {fileID: 1185114593}
   nextLevelButton: {fileID: 555004569}
   timer: 25
+  mode: Level
   levelNumber: 3
   levelText: {fileID: 2042649107}
   fpsText: {fileID: 198761322}

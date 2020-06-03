@@ -7,8 +7,8 @@ public class GameController : MonoBehaviour
 {
     public GameObject floor;
     public GameObject floorFeatures;
-    private GameObject[] tiles;
 
+    private GameObject[] tiles;
     private int tileCount;
 
     private bool gameStart;
@@ -31,6 +31,7 @@ public class GameController : MonoBehaviour
     public Button nextLevelButton;
 
     public float timer;
+    public string mode;
 
     private int rating;
     private int[] ratingMarker;
@@ -45,7 +46,7 @@ public class GameController : MonoBehaviour
         tileCount = floor.transform.childCount;
         tiles = new GameObject[tileCount];
     }
-    
+
     private void Start()
     {
         Cursor.visible = false;
@@ -57,7 +58,7 @@ public class GameController : MonoBehaviour
         gameOverMenu.SetActive(false);
         gameOver = false;
 
-        if (SceneManager.GetActiveScene().name.Equals("PracticeArena"))
+        if (mode.Equals("Practice"))
         {
             timer = 0f;
         }
@@ -65,7 +66,7 @@ public class GameController : MonoBehaviour
         {
             timer += 1f;
         }
-        
+
         countDown += 1f;
 
         secondaryCanvas.enabled = false;
@@ -82,7 +83,7 @@ public class GameController : MonoBehaviour
         Application.targetFrameRate = Screen.currentResolution.refreshRate;
         SetRatingMarker();
     }
-    
+
     private void Update()
     {
         if (gameStart)
@@ -90,7 +91,7 @@ public class GameController : MonoBehaviour
             TimerControl();
             TileCountControl();
 
-            HideCanvas();
+            HideShowCanvas();
         }
         else
         {
@@ -105,7 +106,7 @@ public class GameController : MonoBehaviour
 
     private void TimerControl()
     {
-        if (SceneManager.GetActiveScene().name.Equals("PracticeArena"))
+        if (mode.Equals("Practice"))
         {
             if (!gameOver)
             {
@@ -162,7 +163,7 @@ public class GameController : MonoBehaviour
                     PlayerPrefs.SetInt("UnlockedLevels", levelNumber + 1);
                 }
             }
-            
+
             if (PlayerPrefs.GetInt("Rating" + levelNumber, 0) < rating)
             {
                 PlayerPrefs.SetInt("Rating" + levelNumber, rating);
@@ -216,14 +217,13 @@ public class GameController : MonoBehaviour
     {
         if (tileCount <= 0)
         {
-            if (SceneManager.GetActiveScene().name.Equals("PracticeArena"))
+            if (!gameOver)
             {
-                rating = 3;
-                SetGameOver();
-            }
-            else
-            {
-                if (!gameOver)
+                if (mode.Equals("Practice"))
+                {
+                    rating = 3;
+                }
+                else
                 {
                     if (timer >= ratingMarker[2])
                     {
@@ -237,8 +237,9 @@ public class GameController : MonoBehaviour
                     {
                         rating = 1;
                     }
-                    SetGameOver();
+
                 }
+                SetGameOver();
             }
         }
     }
@@ -248,7 +249,7 @@ public class GameController : MonoBehaviour
         tileCount--;
     }
 
-    private void HideCanvas()
+    private void HideShowCanvas()
     {
         if (gameOver)
         {
@@ -257,9 +258,8 @@ public class GameController : MonoBehaviour
                 if (canvasVisible)
                 {
                     canvas.enabled = false;
-                    canvasVisible = false;
-
                     secondaryCanvas.enabled = true;
+
                     if (rating <= 0)
                     {
                         secondaryCanvas.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = "???";
@@ -273,6 +273,8 @@ public class GameController : MonoBehaviour
                     Camera.main.GetComponent<CameraController>().DisableDepthOfField();
 
                     player.SetActive(false);
+
+                    canvasVisible = false;
                 }
             }
             if (Input.GetButtonUp("Fire2"))
@@ -280,9 +282,8 @@ public class GameController : MonoBehaviour
                 if (!canvasVisible)
                 {
                     canvas.enabled = true;
-                    canvasVisible = true;
-
                     secondaryCanvas.enabled = false;
+
                     if (floorFeatures != null)
                     {
                         floorFeatures.SetActive(true);
@@ -292,6 +293,8 @@ public class GameController : MonoBehaviour
                     Camera.main.GetComponent<CameraController>().EnableDepthOfField();
 
                     player.SetActive(true);
+
+                    canvasVisible = true;
                 }
             }
         }
