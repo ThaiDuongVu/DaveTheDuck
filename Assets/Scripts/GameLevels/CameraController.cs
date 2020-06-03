@@ -14,7 +14,7 @@ public class CameraController : MonoBehaviour
         postProcessProfile.TryGetSettings(out depthOfField);
         DisableDepthOfField();
     }
-    
+
     private void Update()
     {
         if (gameObject.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("Exit"))

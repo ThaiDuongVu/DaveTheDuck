@@ -18,7 +18,7 @@ public class LevelManager : MonoBehaviour
     private Color32 unlockedTextColor;
 
     public Image lockImage;
-    
+
     private void Start()
     {
         unlockedLevels = PlayerPrefs.GetInt("UnlockedLevels", 1);
@@ -31,7 +31,7 @@ public class LevelManager : MonoBehaviour
         PlayerPrefs.SetInt("MaxLevels", maxLevels);
         UpdateLevelNumber();
     }
-    
+
     public void ToggleLevel(string direction)
     {
         if (direction.Equals("left"))

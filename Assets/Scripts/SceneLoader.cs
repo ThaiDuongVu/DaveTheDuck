@@ -14,7 +14,7 @@ public class SceneLoader : MonoBehaviour
     {
         cameraAnimator = Camera.main.GetComponent<Animator>();
     }
-    
+
     private void PrepareLoadScene()
     {
         canvas.enabled = false;

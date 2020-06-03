@@ -19,7 +19,7 @@ public class SettingsController : MonoBehaviour
 
     private string font;
     public TextMeshProUGUI fontText;
-    
+
     private void Start()
     {
         fullScreen = PlayerPrefs.GetString("FullScreen", "On");

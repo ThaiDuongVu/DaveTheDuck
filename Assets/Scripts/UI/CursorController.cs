@@ -165,7 +165,7 @@ public class CursorController : MonoBehaviour
                     SetInstruction(instructionsInGame, "gamepad");
                 }
                 SetInstruction(instructionsMenu, "gamepad");
-                
+
                 controlScheme = "gamepad";
             }
         }

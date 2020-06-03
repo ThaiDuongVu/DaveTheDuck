@@ -16,7 +16,7 @@ public class TimerTextController : MonoBehaviour
         animator = gameObject.GetComponent<Animator>();
         text = gameObject.GetComponent<TextMeshProUGUI>();
     }
-    
+
     private void Update()
     {
         AnimationControl();
@@ -29,7 +29,7 @@ public class TimerTextController : MonoBehaviour
             SetColor(timerColor);
             if (!gameController.GetGameOver())
             {
-                text.text = ((int) gameController.GetTimer()).ToString();
+                text.text = ((int)gameController.GetTimer()).ToString();
             }
             else
             {
@@ -39,7 +39,7 @@ public class TimerTextController : MonoBehaviour
         else
         {
             SetColor(countDownColor);
-            text.text = ((int) gameController.GetCountDown()).ToString();
+            text.text = ((int)gameController.GetCountDown()).ToString();
         }
     }
 

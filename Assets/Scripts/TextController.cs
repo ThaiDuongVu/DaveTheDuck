@@ -14,12 +14,12 @@ public class TextController : MonoBehaviour
     {
         text = gameObject.GetComponent<TextMeshProUGUI>();
     }
-    
+
     private void Start()
     {
         font = "Stylized";
     }
-    
+
     private void Update()
     {
         SetFont();

@@ -4,7 +4,7 @@ public class ConnectorController : MonoBehaviour
 {
     private GameObject[] connectors;
     private int connectorsLength;
-    
+
     private void Awake()
     {
         connectorsLength = gameObject.transform.childCount;
@@ -15,7 +15,7 @@ public class ConnectorController : MonoBehaviour
             connectors[i] = gameObject.transform.GetChild(i).gameObject;
         }
     }
-    
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Player"))

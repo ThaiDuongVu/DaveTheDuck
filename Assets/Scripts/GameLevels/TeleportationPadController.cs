@@ -16,7 +16,7 @@ public class TeleportationPadController : MonoBehaviour
         animator = gameObject.GetComponent<Animator>();
         burst = gameObject.transform.GetChild(2).GetComponent<ParticleSystem>();
     }
-    
+
     private void Start()
     {
         enable = true;

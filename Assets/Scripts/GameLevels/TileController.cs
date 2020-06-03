@@ -29,7 +29,7 @@ public class TileController : MonoBehaviour
 
         popped = false;
     }
-    
+
     private void Update()
     {
         if (!popped)
@@ -38,7 +38,7 @@ public class TileController : MonoBehaviour
             {
                 animator.speed = Random.Range(0.6f, 1f);
                 animator.SetTrigger("pop");
-                
+
                 popped = true;
             }
         }
