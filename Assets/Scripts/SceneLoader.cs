@@ -18,6 +18,7 @@ public class SceneLoader : MonoBehaviour
     private void PrepareLoadScene()
     {
         canvas.enabled = false;
+        Camera.main.GetComponent<CameraController>().DisableDepthOfField();
         cameraAnimator.SetTrigger("zoomIn");
     }
 

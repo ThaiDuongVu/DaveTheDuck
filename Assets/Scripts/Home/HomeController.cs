@@ -20,6 +20,7 @@ public class HomeController : MonoBehaviour
             if (Camera.main.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("Empty"))
             {
                 menuAnimator.SetTrigger("slideIn");
+                Camera.main.GetComponent<CameraController>().EnableDepthOfField();
                 menuSlideIn = true;
             }
         }

@@ -147,6 +147,8 @@ public class GameController : MonoBehaviour
         instructionsInGame.SetActive(false);
         instructionsMenu.SetActive(true);
 
+        Camera.main.GetComponent<CameraController>().EnableDepthOfField();
+
         if (rating <= 0)
         {
             nextLevelButton.gameObject.SetActive(false);
@@ -268,6 +270,8 @@ public class GameController : MonoBehaviour
                     }
 
                     Camera.main.GetComponent<Animator>().SetTrigger("pan");
+                    Camera.main.GetComponent<CameraController>().DisableDepthOfField();
+
                     player.SetActive(false);
                 }
             }
@@ -285,6 +289,8 @@ public class GameController : MonoBehaviour
                     }
 
                     Camera.main.GetComponent<Animator>().SetTrigger("panBack");
+                    Camera.main.GetComponent<CameraController>().EnableDepthOfField();
+
                     player.SetActive(true);
                 }
             }

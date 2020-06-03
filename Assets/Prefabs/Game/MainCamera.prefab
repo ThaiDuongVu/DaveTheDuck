@@ -118,6 +118,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7b0b9ab8ea1a4444bb37e4d3187c5e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  postProcessProfile: {fileID: 11400000, guid: ba80b2c584c6f8a4384e8821be73b263, type: 2}
 --- !u!114 &575130517
 MonoBehaviour:
   m_ObjectHideFlags: 0
