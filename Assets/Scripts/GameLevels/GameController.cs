@@ -79,6 +79,7 @@ public class GameController : MonoBehaviour
             fpsText.gameObject.SetActive(false);
         }
 
+        Application.targetFrameRate = Screen.currentResolution.refreshRate;
         SetRatingMarker();
     }
     
