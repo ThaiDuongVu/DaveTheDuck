@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
 using System.Collections;
-using TMPro;
 
 public class TileController : MonoBehaviour
 {
@@ -17,10 +16,10 @@ public class TileController : MonoBehaviour
     private Animator animator;
     private bool popped;
 
-    private const float minDelay = 12f;
-    private const float maxDelay = 18f;
+    private const float minDelay = 14f;
+    private const float maxDelay = 20f;
 
-    public TextMeshPro bonusText;
+    public GameObject bonusText;
 
     private void Awake()
     {
@@ -76,7 +75,7 @@ public class TileController : MonoBehaviour
                         gameController.timer += .1f;
                         gameController.score++;
 
-                        Instantiate(bonusText.gameObject, gameObject.transform.position, bonusText.transform.rotation);
+                        Instantiate(bonusText, gameObject.transform.position, bonusText.transform.rotation);
                     }
                     StartCoroutine("ResetPaint");
                 }

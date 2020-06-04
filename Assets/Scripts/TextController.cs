@@ -8,11 +8,19 @@ public class TextController : MonoBehaviour
     public TMP_FontAsset stylized;
     public TMP_FontAsset roboto;
 
-    private TextMeshProUGUI text;
+    private TextMeshProUGUI textUI;
+    private TextMeshPro text;
 
     private void Awake()
     {
-        text = gameObject.GetComponent<TextMeshProUGUI>();
+        if (gameObject.name.Equals("BonusText"))
+        {
+            text = gameObject.GetComponent<TextMeshPro>();
+        }
+        else
+        {
+            textUI = gameObject.GetComponent<TextMeshProUGUI>();
+        }
     }
 
     private void Start()
@@ -23,14 +31,6 @@ public class TextController : MonoBehaviour
     private void Update()
     {
         SetFont();
-
-        if (gameObject.name.Equals("BonusText"))
-        {
-            if (gameObject.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("Empty"))
-            {
-                Destroy(gameObject);
-            }
-        }
     }
 
     private void SetFont()
@@ -39,11 +39,25 @@ public class TextController : MonoBehaviour
         {
             if (font.Equals("Stylized"))
             {
-                text.font = roboto;
+                if (textUI != null)
+                {
+                    textUI.font = roboto;
+                }
+                else
+                {
+                    text.font = roboto;
+                }
             }
             else
             {
-                text.font = stylized;
+                if (textUI != null)
+                {
+                    textUI.font = stylized;
+                }
+                else
+                {
+                    text.font = stylized;
+                }
             }
 
             font = PlayerPrefs.GetString("Font", "Stylized");
