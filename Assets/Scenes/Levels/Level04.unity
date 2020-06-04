@@ -188,7 +188,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &31139480
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -283,7 +285,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &47696001
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -411,7 +415,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &53427777
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -572,7 +578,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &66821248
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -667,7 +675,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &72319916
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -795,7 +805,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &73664551
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -956,7 +968,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &97639033
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1084,7 +1098,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &98855985
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1179,7 +1195,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &112256562
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1340,7 +1358,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &117457304
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1468,7 +1488,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &128539785
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1596,7 +1618,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &141970414
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1691,7 +1715,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &144669924
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1852,7 +1878,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &174627804
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1947,7 +1975,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &189839479
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2321,7 +2351,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &208059382
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2613,7 +2645,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &213240680
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2774,7 +2808,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &217926297
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2869,7 +2905,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &223071520
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2997,7 +3035,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &229718748
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3125,7 +3165,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &234819379
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3361,7 +3403,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &267577216
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3663,7 +3707,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &278039429
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3791,7 +3837,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &282524719
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4147,7 +4195,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &308731461
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4275,7 +4325,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &309990880
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4436,7 +4488,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &310597051
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4527,7 +4581,7 @@ Transform:
   - {fileID: 1189017243}
   - {fileID: 1446248672}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 45, z: 0}
 --- !u!1 &324795882
 GameObject:
@@ -4596,7 +4650,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &324795886
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4691,7 +4747,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &367719631
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4819,7 +4877,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &376570159
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4980,7 +5040,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &380409625
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5075,7 +5137,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &383560632
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5277,7 +5341,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &394968270
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5438,7 +5504,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &397509707
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5632,7 +5700,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &417403359
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5760,7 +5830,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &418689753
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5888,7 +5960,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &420733859
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6016,7 +6090,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &423310677
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6111,7 +6187,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &437093063
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6272,7 +6350,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &451159367
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6400,7 +6480,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &456091089
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6528,7 +6610,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &461228782
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6656,7 +6740,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &464554948
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6784,7 +6870,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &469573145
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6879,7 +6967,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &472819367
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7040,7 +7130,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &481904051
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7168,7 +7260,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &522365469
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7263,7 +7357,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &524834204
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7424,7 +7520,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &532926240
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7552,7 +7650,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &548371693
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7647,7 +7747,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &554535017
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7972,7 +8074,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &555385621
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8100,7 +8204,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &574288338
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8553,7 +8659,7 @@ Transform:
   - {fileID: 1540849757}
   - {fileID: 1942144464}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 45, z: 0}
 --- !u!65 &636496172
 BoxCollider:
@@ -8671,7 +8777,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &643535533
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8858,7 +8966,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &651383974
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8986,7 +9096,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &686889735
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9114,7 +9226,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &687513915
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9609,7 +9723,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &715002799
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9737,7 +9853,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &719983122
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9865,7 +9983,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &767466497
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9960,7 +10080,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &773141763
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10128,7 +10250,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &805728591
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10256,7 +10380,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &806782904
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10591,7 +10717,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &821974145
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10719,7 +10847,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &826125213
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10814,7 +10944,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &826704516
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10975,7 +11107,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &838762584
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11070,7 +11204,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &858415278
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11231,7 +11367,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &858858661
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11464,6 +11602,75 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stylized: {fileID: 11400000, guid: d7242b5bc14631747bafdd82096dca1f, type: 2}
   roboto: {fileID: 11400000, guid: a488007ff7350e84682944bd9a89e198, type: 2}
+--- !u!1001 &878648476
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4663102021883601955, guid: 0df615bb977c2e14da5a90808dbc826f,
+        type: 3}
+      propertyPath: m_Name
+      value: DirectionalLight (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8811909714422425157, guid: 0df615bb977c2e14da5a90808dbc826f,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8811909714422425157, guid: 0df615bb977c2e14da5a90808dbc826f,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8811909714422425157, guid: 0df615bb977c2e14da5a90808dbc826f,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8811909714422425157, guid: 0df615bb977c2e14da5a90808dbc826f,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.35355338
+      objectReference: {fileID: 0}
+    - target: {fileID: 8811909714422425157, guid: 0df615bb977c2e14da5a90808dbc826f,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.35355338
+      objectReference: {fileID: 0}
+    - target: {fileID: 8811909714422425157, guid: 0df615bb977c2e14da5a90808dbc826f,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.1464466
+      objectReference: {fileID: 0}
+    - target: {fileID: 8811909714422425157, guid: 0df615bb977c2e14da5a90808dbc826f,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.8535535
+      objectReference: {fileID: 0}
+    - target: {fileID: 8811909714422425157, guid: 0df615bb977c2e14da5a90808dbc826f,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8811909714422425157, guid: 0df615bb977c2e14da5a90808dbc826f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 8811909714422425157, guid: 0df615bb977c2e14da5a90808dbc826f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -45
+      objectReference: {fileID: 0}
+    - target: {fileID: 8811909714422425157, guid: 0df615bb977c2e14da5a90808dbc826f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0df615bb977c2e14da5a90808dbc826f, type: 3}
 --- !u!1 &897971427
 GameObject:
   m_ObjectHideFlags: 0
@@ -11531,7 +11738,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &897971431
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11823,7 +12032,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &899398916
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11951,7 +12162,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &901649347
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12079,7 +12292,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &904577401
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12207,7 +12422,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &952484170
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12302,7 +12519,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &960442693
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12442,7 +12661,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &966582858
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12570,7 +12791,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &971438168
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12731,7 +12954,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &973948054
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12859,7 +13084,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &985859682
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12987,7 +13214,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &987512635
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13082,7 +13311,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &1004991849
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13210,7 +13441,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &1008182428
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13338,7 +13571,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &1010860302
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13466,7 +13701,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &1016394690
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13594,7 +13831,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &1019753056
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13722,7 +13961,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &1022844856
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13883,7 +14124,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &1026067942
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13978,7 +14221,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &1034521251
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14139,7 +14384,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &1035567256
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14234,7 +14481,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &1044347691
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14395,7 +14644,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &1053836882
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14490,7 +14741,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &1069124077
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14618,7 +14871,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &1071906359
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14746,7 +15001,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &1079116215
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14907,7 +15164,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &1087390900
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15035,7 +15294,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &1090646915
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15163,7 +15424,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &1110491017
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15258,7 +15521,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &1114102528
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15386,7 +15651,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &1131179618
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15514,7 +15781,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &1131624573
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15675,7 +15944,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &1133456943
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15981,7 +16252,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &1165734566
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16109,7 +16382,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &1166381325
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16270,7 +16545,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &1171093466
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16449,7 +16726,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &1178324187
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16706,7 +16985,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &1205051586
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16801,7 +17082,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &1249714298
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16962,7 +17245,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &1256143951
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17093,7 +17378,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &1264251101
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17221,7 +17508,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &1269211510
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17382,7 +17671,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &1270328372
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17510,7 +17801,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &1273536430
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17605,7 +17898,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &1284411597
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17766,7 +18061,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &1289017224
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17861,7 +18158,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &1295855583
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18088,7 +18387,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &1299758629
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18216,7 +18517,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &1305970463
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18344,7 +18647,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &1306606503
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18546,7 +18851,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &1335266423
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18707,7 +19014,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &1336457955
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18835,7 +19144,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &1338867479
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18930,7 +19241,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &1346797770
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -19091,7 +19404,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &1357691392
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -19219,7 +19534,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &1374437555
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -19314,7 +19631,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &1375634246
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -19475,7 +19794,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &1376204896
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -19603,7 +19924,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &1376430673
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -19698,7 +20021,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &1388069210
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -19826,7 +20151,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &1391494619
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -19987,7 +20314,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &1395235120
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20115,7 +20444,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &1410852026
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20243,7 +20574,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &1412351288
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20371,7 +20704,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &1417572800
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20499,7 +20834,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &1431606678
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20627,7 +20964,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &1445423822
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20814,7 +21153,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &1464358538
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20975,7 +21316,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &1493202981
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21070,7 +21413,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &1498567307
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21231,7 +21576,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &1510562254
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21359,7 +21706,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &1514296663
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21487,7 +21836,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &1522206970
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21656,7 +22007,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!95 &1525655909
 Animator:
   serializedVersion: 3
@@ -21743,7 +22096,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &1530980477
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21838,7 +22193,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &1534786837
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21999,7 +22356,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &1540849760
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -22094,7 +22453,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &1541279113
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -22330,7 +22691,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &1556937000
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -22425,7 +22788,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &1564078374
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -22553,7 +22918,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &1565447684
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -22714,7 +23081,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &1571501216
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -23186,7 +23555,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &1596996155
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -23314,7 +23685,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &1599167972
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -23442,7 +23815,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &1624023988
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -23503,100 +23878,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1624023984}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1001 &1627423699
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 7626634800401037909, guid: ff48aaf914f741d49873a71dabc52f86,
-        type: 3}
-      propertyPath: m_Name
-      value: DirectionalLight (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7626634800401037909, guid: ff48aaf914f741d49873a71dabc52f86,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7626634800401037910, guid: ff48aaf914f741d49873a71dabc52f86,
-        type: 3}
-      propertyPath: m_BoundingSphereOverride.y
-      value: NaN
-      objectReference: {fileID: 0}
-    - target: {fileID: 7626634800401037910, guid: ff48aaf914f741d49873a71dabc52f86,
-        type: 3}
-      propertyPath: m_Intensity
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7626634800401037910, guid: ff48aaf914f741d49873a71dabc52f86,
-        type: 3}
-      propertyPath: m_BoundingSphereOverride.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7626634800401037910, guid: ff48aaf914f741d49873a71dabc52f86,
-        type: 3}
-      propertyPath: m_Shadows.m_Type
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7626634800401037911, guid: ff48aaf914f741d49873a71dabc52f86,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7626634800401037911, guid: ff48aaf914f741d49873a71dabc52f86,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 7626634800401037911, guid: ff48aaf914f741d49873a71dabc52f86,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7626634800401037911, guid: ff48aaf914f741d49873a71dabc52f86,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.35355338
-      objectReference: {fileID: 0}
-    - target: {fileID: 7626634800401037911, guid: ff48aaf914f741d49873a71dabc52f86,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.35355338
-      objectReference: {fileID: 0}
-    - target: {fileID: 7626634800401037911, guid: ff48aaf914f741d49873a71dabc52f86,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.1464466
-      objectReference: {fileID: 0}
-    - target: {fileID: 7626634800401037911, guid: ff48aaf914f741d49873a71dabc52f86,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.8535535
-      objectReference: {fileID: 0}
-    - target: {fileID: 7626634800401037911, guid: ff48aaf914f741d49873a71dabc52f86,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7626634800401037911, guid: ff48aaf914f741d49873a71dabc52f86,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 45
-      objectReference: {fileID: 0}
-    - target: {fileID: 7626634800401037911, guid: ff48aaf914f741d49873a71dabc52f86,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -45
-      objectReference: {fileID: 0}
-    - target: {fileID: 7626634800401037911, guid: ff48aaf914f741d49873a71dabc52f86,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: ff48aaf914f741d49873a71dabc52f86, type: 3}
 --- !u!1 &1654748497
 GameObject:
   m_ObjectHideFlags: 0
@@ -23664,7 +23945,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &1654748501
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -23792,7 +24075,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &1657345425
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -24084,7 +24369,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &1668331541
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -24212,7 +24499,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &1668437971
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -24307,7 +24596,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &1671178415
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -24468,7 +24759,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &1675729160
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -24596,7 +24889,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &1683460994
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -24724,7 +25019,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &1692692282
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -24827,6 +25124,9 @@ MonoBehaviour:
   instructionsMenu: {fileID: 1185114593}
   nextLevelButton: {fileID: 555004569}
   timer: 30
+  score: 0
+  scoreText: {fileID: 0}
+  highScoreText: {fileID: 0}
   mode: Level
   levelNumber: 4
   levelText: {fileID: 2042649107}
@@ -24895,7 +25195,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &1730941808
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25056,7 +25358,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &1745708738
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25358,7 +25662,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &1755636156
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25486,7 +25792,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &1761512341
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25614,7 +25922,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &1771289965
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25709,7 +26019,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &1775857233
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25986,7 +26298,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &1821004928
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26114,7 +26428,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &1823045206
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26242,7 +26558,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &1825928927
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26370,7 +26688,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &1828974575
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26531,7 +26851,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &1830208967
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26734,7 +27056,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &1838983651
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26829,7 +27153,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &1857728196
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26990,7 +27316,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &1865351440
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -27249,7 +27577,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &1878245717
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -27377,7 +27707,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &1879207287
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -27505,7 +27837,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &1898178814
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -27633,7 +27967,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &1910103283
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -27794,7 +28130,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &1917833208
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -27922,7 +28260,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &1930543895
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -27983,6 +28323,80 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1930543891}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &1934925501
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2345562176378294650, guid: 1b92002acfb0ea248af486425b50cc5c,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2345562176378294650, guid: 1b92002acfb0ea248af486425b50cc5c,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2345562176378294650, guid: 1b92002acfb0ea248af486425b50cc5c,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2345562176378294650, guid: 1b92002acfb0ea248af486425b50cc5c,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2345562176378294650, guid: 1b92002acfb0ea248af486425b50cc5c,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2345562176378294650, guid: 1b92002acfb0ea248af486425b50cc5c,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2345562176378294650, guid: 1b92002acfb0ea248af486425b50cc5c,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2345562176378294650, guid: 1b92002acfb0ea248af486425b50cc5c,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2345562176378294650, guid: 1b92002acfb0ea248af486425b50cc5c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2345562176378294650, guid: 1b92002acfb0ea248af486425b50cc5c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2345562176378294650, guid: 1b92002acfb0ea248af486425b50cc5c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2345562176378294651, guid: 1b92002acfb0ea248af486425b50cc5c,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1989886946}
+    - target: {fileID: 2345562176378294655, guid: 1b92002acfb0ea248af486425b50cc5c,
+        type: 3}
+      propertyPath: m_Name
+      value: Trail
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1b92002acfb0ea248af486425b50cc5c, type: 3}
 --- !u!1 &1942144463
 GameObject:
   m_ObjectHideFlags: 0
@@ -28050,7 +28464,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &1942144467
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -28145,7 +28561,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &1947564914
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -28273,7 +28691,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &1954561484
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -28434,7 +28854,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &1982124209
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -28568,7 +28990,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &1992084627
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -29042,7 +29466,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &2067224441
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -29170,7 +29596,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &2095317784
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -29340,7 +29768,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &2135858143
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -29501,7 +29931,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &2136121043
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -29629,7 +30061,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: 9cf5bdb2f2a93b9499302d41fef4cd25, type: 2}
+  paintMaterials: []
   gameController: {fileID: 1712393130}
+  bonusText: {fileID: 0}
 --- !u!65 &2143689398
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -29740,7 +30174,7 @@ PrefabInstance:
     - target: {fileID: 519745986060853641, guid: 8f880c430a916ec47a8fe1a436244ea4,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 519745986060853641, guid: 8f880c430a916ec47a8fe1a436244ea4,
         type: 3}

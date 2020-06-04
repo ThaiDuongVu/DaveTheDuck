@@ -83,6 +83,7 @@ public class TileController : MonoBehaviour
                 {
                     gameController.DecreaseTile();
                 }
+                
                 painted = true;
             }
         }

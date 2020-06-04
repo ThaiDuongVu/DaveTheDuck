@@ -6,8 +6,8 @@ public class SettingsController : MonoBehaviour
     private string fullScreen;
     public TextMeshProUGUI fullScreenText;
 
-    private int[] resolutionX = new int[5];
-    private int[] resolutionY = new int[5];
+    private int[] resolutionX = new int[6];
+    private int[] resolutionY = new int[6];
     private int resolutionIndex;
     public TextMeshProUGUI resolutionText;
 
@@ -27,19 +27,21 @@ public class SettingsController : MonoBehaviour
     {
         fullScreen = PlayerPrefs.GetString("FullScreen", "On");
         aud = PlayerPrefs.GetString("Audio", "On");
-        resolutionIndex = PlayerPrefs.GetInt("ResolutionIndex", 0);
+        resolutionIndex = PlayerPrefs.GetInt("ResolutionIndex", 5);
 
         resolutionX[0] = 1920;
         resolutionX[1] = 1600;
         resolutionX[2] = 1366;
         resolutionX[3] = 1280;
         resolutionX[4] = 1024;
+        resolutionX[5] = Screen.currentResolution.width;
 
         resolutionY[0] = 1080;
         resolutionY[1] = 900;
         resolutionY[2] = 768;
         resolutionY[3] = 720;
         resolutionY[4] = 576;
+        resolutionY[5] = Screen.currentResolution.height;
 
         showFPS = PlayerPrefs.GetString("ShowFPS", "On");
         font = PlayerPrefs.GetString("Font", "Stylized");
@@ -152,7 +154,15 @@ public class SettingsController : MonoBehaviour
         audioText.text = aud;
 
         PlayerPrefs.SetInt("ResolutionIndex", resolutionIndex);
-        resolutionText.text = resolutionX[resolutionIndex].ToString() + "." + resolutionY[resolutionIndex].ToString();
+
+        if (resolutionIndex == 5)
+        {
+            resolutionText.text = "Native";
+        }
+        else
+        {
+            resolutionText.text = resolutionX[resolutionIndex].ToString() + "." + resolutionY[resolutionIndex].ToString();
+        }
 
         PlayerPrefs.SetString("ShowFPS", showFPS);
         fpsText.text = showFPS;
