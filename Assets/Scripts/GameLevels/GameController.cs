@@ -31,6 +31,11 @@ public class GameController : MonoBehaviour
     public Button nextLevelButton;
 
     public float timer;
+    public int score;
+    public TextMeshProUGUI scoreText;
+    private int highScore;
+    public TextMeshProUGUI highScoreText;
+
     public string mode;
 
     private int rating;
@@ -67,6 +72,14 @@ public class GameController : MonoBehaviour
             timer += 1f;
         }
 
+        if (mode.Equals("Endless"))
+        {
+            score = 0;
+            highScore = PlayerPrefs.GetInt("HighScore", 0);
+
+            highScoreText.text = "High Score: " + highScore;
+        }
+
         countDown += 1f;
 
         secondaryCanvas.enabled = false;
@@ -101,6 +114,24 @@ public class GameController : MonoBehaviour
         if (PlayerPrefs.GetString("ShowFPS", "On").Equals("On"))
         {
             fpsText.text = ((int)(1 / Time.deltaTime)).ToString();
+        }
+
+        if (mode.Equals("Endless"))
+        {
+            ScoreControl();
+        }
+    }
+
+    private void ScoreControl()
+    {
+        scoreText.text = score.ToString();
+
+        if (score > highScore)
+        {
+            highScore = score;
+            PlayerPrefs.SetInt("HighScore", highScore);
+
+            highScoreText.text = "New High Score!";
         }
     }
 

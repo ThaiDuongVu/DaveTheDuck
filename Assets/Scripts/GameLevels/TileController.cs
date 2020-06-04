@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using TMPro;
 
 public class TileController : MonoBehaviour
 {
@@ -16,8 +17,10 @@ public class TileController : MonoBehaviour
     private Animator animator;
     private bool popped;
 
-    private const float minDelay = 15f;
+    private const float minDelay = 12f;
     private const float maxDelay = 18f;
+
+    public TextMeshPro bonusText;
 
     private void Awake()
     {
@@ -68,7 +71,13 @@ public class TileController : MonoBehaviour
 
                 if (gameController.mode.Equals("Endless"))
                 {
-                    gameController.timer += .1f;
+                    if (gameController.GetGameStart())
+                    {
+                        gameController.timer += .1f;
+                        gameController.score++;
+
+                        Instantiate(bonusText.gameObject, gameObject.transform.position, bonusText.transform.rotation);
+                    }
                     StartCoroutine("ResetPaint");
                 }
                 else

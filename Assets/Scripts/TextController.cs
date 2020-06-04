@@ -23,6 +23,14 @@ public class TextController : MonoBehaviour
     private void Update()
     {
         SetFont();
+
+        if (gameObject.name.Equals("BonusText"))
+        {
+            if (gameObject.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("Empty"))
+            {
+                Destroy(gameObject);
+            }
+        }
     }
 
     private void SetFont()
