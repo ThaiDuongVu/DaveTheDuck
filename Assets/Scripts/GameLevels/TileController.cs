@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using System.Collections;
 
 public class TileController : MonoBehaviour
 {
@@ -6,6 +7,7 @@ public class TileController : MonoBehaviour
 
     public Material defaultMaterial;
     private Material paintMaterial;
+    public Material[] paintMaterials;
 
     private bool painted;
 
@@ -14,10 +16,21 @@ public class TileController : MonoBehaviour
     private Animator animator;
     private bool popped;
 
+    private const float minDelay = 15f;
+    private const float maxDelay = 18f;
+
     private void Awake()
     {
         meshRenderer = gameObject.transform.GetComponent<MeshRenderer>();
-        paintMaterial = meshRenderer.material;
+
+        if (gameController.mode.Equals("Endless"))
+        {
+            paintMaterial = paintMaterials[Random.Range(0, paintMaterials.Length)];
+        }
+        else
+        {
+            paintMaterial = meshRenderer.material;
+        }
 
         animator = gameObject.GetComponent<Animator>();
     }
@@ -53,6 +66,15 @@ public class TileController : MonoBehaviour
                 animator.SetTrigger("pop");
                 SetMaterial();
 
+                if (gameController.mode.Equals("Endless"))
+                {
+                    gameController.timer += .1f;
+                    StartCoroutine("ResetPaint");
+                }
+                else
+                {
+                    gameController.DecreaseTile();
+                }
                 painted = true;
             }
         }
@@ -61,6 +83,19 @@ public class TileController : MonoBehaviour
     private void SetMaterial()
     {
         meshRenderer.material = paintMaterial;
-        gameController.DecreaseTile();
+    }
+
+    private IEnumerator ResetPaint()
+    {
+        yield return new WaitForSeconds(Random.Range(minDelay, maxDelay));
+
+        if (!gameController.GetGameOver())
+        {
+            meshRenderer.material = defaultMaterial;
+            paintMaterial = paintMaterials[Random.Range(0, paintMaterials.Length)];
+
+            animator.SetTrigger("push");
+            painted = false;
+        }
     }
 }

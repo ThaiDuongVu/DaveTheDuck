@@ -124,7 +124,15 @@ public class GameController : MonoBehaviour
                 if (!gameOver)
                 {
                     SetGameOver();
-                    gameOverMenu.transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = "Level Failed";
+
+                    if (mode.Equals("Endless"))
+                    {
+                        gameOverMenu.transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = "Game Over";
+                    }
+                    else
+                    {
+                        gameOverMenu.transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = "Level Failed";
+                    }
 
                     rating = 0;
                 }
@@ -262,7 +270,10 @@ public class GameController : MonoBehaviour
 
                     if (rating <= 0)
                     {
-                        secondaryCanvas.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = "???";
+                        if (mode.Equals("Level"))
+                        {
+                            secondaryCanvas.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = "???";
+                        }
                     }
                     if (floorFeatures != null)
                     {

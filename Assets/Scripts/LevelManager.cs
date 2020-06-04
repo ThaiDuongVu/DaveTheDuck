@@ -22,7 +22,15 @@ public class LevelManager : MonoBehaviour
     private void Start()
     {
         unlockedLevels = PlayerPrefs.GetInt("UnlockedLevels", 1);
-        selectedLevel = unlockedLevels;
+
+        if (unlockedLevels < maxLevels)
+        {
+            selectedLevel = unlockedLevels;
+        }
+        else
+        {
+            selectedLevel = maxLevels;
+        }
 
         unlockedTextColor = levelNumber.color;
         lockedTextColor = levelNumber.color;

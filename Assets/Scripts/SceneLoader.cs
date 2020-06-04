@@ -46,6 +46,12 @@ public class SceneLoader : MonoBehaviour
         cameraController.SetSceneToLoad("PracticeArena");
     }
 
+    public void Endless()
+    {
+        PrepareLoadScene();
+        cameraController.SetSceneToLoad("Endless");
+    }
+
     public void Exit()
     {
         Application.Quit();
