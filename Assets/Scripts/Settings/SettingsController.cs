@@ -20,6 +20,9 @@ public class SettingsController : MonoBehaviour
     private string font;
     public TextMeshProUGUI fontText;
 
+    private string postProcessing;
+    public TextMeshProUGUI postProcessingText;
+
     private void Start()
     {
         fullScreen = PlayerPrefs.GetString("FullScreen", "On");
@@ -40,6 +43,7 @@ public class SettingsController : MonoBehaviour
 
         showFPS = PlayerPrefs.GetString("ShowFPS", "On");
         font = PlayerPrefs.GetString("Font", "Stylized");
+        postProcessing = PlayerPrefs.GetString("PostProcessing", "On");
 
         Apply();
     }
@@ -125,6 +129,20 @@ public class SettingsController : MonoBehaviour
         Apply();
     }
 
+    public void TogglePostProcessing()
+    {
+        if (postProcessing.Equals("On"))
+        {
+            postProcessing = "Off";
+        }
+        else
+        {
+            postProcessing = "On";
+        }
+
+        Apply();
+    }
+
     private void Apply()
     {
         PlayerPrefs.SetString("FullScreen", fullScreen);
@@ -141,6 +159,9 @@ public class SettingsController : MonoBehaviour
 
         PlayerPrefs.SetString("Font", font);
         fontText.text = font;
+
+        PlayerPrefs.SetString("PostProcessing", postProcessing);
+        postProcessingText.text = postProcessing;
 
         if (fullScreen.Equals("On"))
         {

@@ -9,10 +9,14 @@ public class CameraController : MonoBehaviour
     public PostProcessProfile postProcessProfile;
     private DepthOfField depthOfField;
 
+    private string postProcessingMode;
+
     private void Start()
     {
         postProcessProfile.TryGetSettings(out depthOfField);
         DisableDepthOfField();
+
+        postProcessingMode = "On";
     }
 
     private void Update()
@@ -20,6 +24,23 @@ public class CameraController : MonoBehaviour
         if (gameObject.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("Exit"))
         {
             SceneManager.LoadScene(sceneToLoad, LoadSceneMode.Single);
+        }
+        SetPostProcessing();
+    }
+
+    private void SetPostProcessing()
+    {
+        if (postProcessingMode != PlayerPrefs.GetString("PostProcessing", "On"))
+        {
+            if (postProcessingMode.Equals("On"))
+            {
+                gameObject.GetComponent<PostProcessVolume>().enabled = false;
+            }
+            else
+            {
+                gameObject.GetComponent<PostProcessVolume>().enabled = true;
+            }
+            postProcessingMode = PlayerPrefs.GetString("PostProcessing", "On");
         }
     }
 
