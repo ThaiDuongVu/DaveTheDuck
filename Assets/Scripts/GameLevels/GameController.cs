@@ -187,6 +187,7 @@ public class GameController : MonoBehaviour
         instructionsMenu.SetActive(true);
 
         Camera.main.GetComponent<CameraController>().EnableDepthOfField();
+        Camera.main.transform.parent.GetComponent<CameraShake>().Shake();
 
         if (rating <= 0)
         {

@@ -39,6 +39,8 @@ public class TeleportationPadController : MonoBehaviour
 
             Pop();
             otherPad.Pop();
+
+            Camera.main.transform.parent.GetComponent<CameraShake>().Shake();
         }
     }
 

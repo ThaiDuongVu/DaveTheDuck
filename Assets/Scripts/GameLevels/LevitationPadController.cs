@@ -3,7 +3,7 @@
 public class LevitationPadController : MonoBehaviour
 {
     private Animator animator;
-    private float force = 1500f;
+    private float force = 1600f;
 
     private void Awake()
     {
@@ -14,8 +14,13 @@ public class LevitationPadController : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
+            other.gameObject.GetComponent<Rigidbody>().mass = 2f;
             other.gameObject.GetComponent<Rigidbody>().AddForce(Vector3.up * force);
+            other.gameObject.GetComponent<Rigidbody>().mass = 5f;
+            
             animator.SetTrigger("pop");
+
+            Camera.main.transform.parent.GetComponent<CameraShake>().Shake();
         }
     }
 }
