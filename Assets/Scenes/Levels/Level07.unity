@@ -30803,11 +30803,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: LevitationPad
       objectReference: {fileID: 0}
-    - target: {fileID: 8770683332915921058, guid: 2e6366ca51ea5db4cbd3b9c1bc64e329,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8770683332915921062, guid: 2e6366ca51ea5db4cbd3b9c1bc64e329,
         type: 3}
       propertyPath: m_LocalPosition.x
