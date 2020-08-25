@@ -7275,6 +7275,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 575130517, guid: 594226c648a7d8548b881d45a030efcc, type: 3}
+      propertyPath: antialiasingMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 575130517, guid: 594226c648a7d8548b881d45a030efcc, type: 3}
+      propertyPath: subpixelMorphologicalAntialiasing.quality
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 762883631143802360, guid: 594226c648a7d8548b881d45a030efcc,
         type: 3}
       propertyPath: m_Name

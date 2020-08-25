@@ -52,7 +52,7 @@ MonoBehaviour:
     value: 0.2
   size:
     overrideState: 1
-    value: 0.8
+    value: 0.5
   lumContrib:
     overrideState: 0
     value: 0.8
@@ -74,7 +74,7 @@ MonoBehaviour:
     value: 1
   intensity:
     overrideState: 1
-    value: 1.5
+    value: 1.25
   threshold:
     overrideState: 0
     value: 1
@@ -140,8 +140,8 @@ MonoBehaviour:
     overrideState: 1
     value: 0
   color:
-    overrideState: 0
-    value: {r: 0, g: 0, b: 0, a: 1}
+    overrideState: 1
+    value: {r: 0.13333334, g: 0.15686275, b: 0.19215687, a: 1}
   center:
     overrideState: 0
     value: {x: 0.5, y: 0.5}
@@ -155,7 +155,7 @@ MonoBehaviour:
     overrideState: 0
     value: 1
   rounded:
-    overrideState: 1
+    overrideState: 0
     value: 0
   mask:
     overrideState: 0
