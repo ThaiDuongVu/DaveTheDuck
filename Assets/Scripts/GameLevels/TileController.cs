@@ -66,6 +66,7 @@ public class TileController : MonoBehaviour
             if (!painted)
             {
                 animator.SetTrigger("pop");
+                Camera.main.transform.parent.GetComponent<CameraShake>().ShakeLight();
                 SetMaterial();
 
                 if (gameController.mode.Equals("Endless"))

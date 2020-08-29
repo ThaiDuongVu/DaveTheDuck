@@ -11,6 +11,8 @@ public class CameraController : MonoBehaviour
 
     private string postProcessingMode;
 
+    public PostProcessLayer postProcessLayer;
+
     private void Start()
     {
         postProcessProfile.TryGetSettings(out depthOfField);
@@ -26,6 +28,11 @@ public class CameraController : MonoBehaviour
             SceneManager.LoadScene(sceneToLoad, LoadSceneMode.Single);
         }
         SetPostProcessing();
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            postProcessLayer.enabled = false;
+        }
     }
 
     private void SetPostProcessing()

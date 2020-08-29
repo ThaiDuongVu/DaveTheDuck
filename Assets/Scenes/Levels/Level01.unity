@@ -5031,7 +5031,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5439925503713337232, guid: 6c006653dded83f48936920be9fc4ff5, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 6c006653dded83f48936920be9fc4ff5, type: 3}
 --- !u!114 &718557553 stripped
 MonoBehaviour:
@@ -15434,6 +15435,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dave
       objectReference: {fileID: 0}
+    - target: {fileID: 519745986060853640, guid: 8f880c430a916ec47a8fe1a436244ea4,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 519745986060853641, guid: 8f880c430a916ec47a8fe1a436244ea4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -15567,6 +15573,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Trail
+      objectReference: {fileID: 0}
+    - target: {fileID: 2345562176378294655, guid: 1b92002acfb0ea248af486425b50cc5c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1b92002acfb0ea248af486425b50cc5c, type: 3}

@@ -40,4 +40,11 @@ public class CameraShake : MonoBehaviour
         shakeAmount = 0.3f;
         decreaseFactor = 2f;
     }
+
+    public void ShakeLight()
+    {
+        shakeDuration = 0.05f;
+        shakeAmount = 0.05f;
+        decreaseFactor = 2f;
+    }
 }
